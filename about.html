@@ -1,0 +1,357 @@
+<!-- About Us - Vantage Gold Label -->
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="Untitled design (14).png" />
+    <title>About Us | The Gilded Editorial</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#89a0f8",
+                        "on-secondary-container": "#636262",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-low": "#f5f3ee",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffe089",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#e2dfde",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5f5e5e",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-fixed": "#dce1ff",
+                        "on-tertiary-fixed": "#001550",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#745b00",
+                        "on-primary-fixed-variant": "#574400",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container": "#f0eee9",
+                        "surface-variant": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary-fixed-variant": "#274092",
+                        "tertiary": "#4159ac",
+                        "surface-container-highest": "#e4e2dd",
+                        "outline": "#7f7663",
+                        "primary-container": "#c5a022",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-container": "#483800",
+                        "surface": "#fbf9f4",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#eac244",
+                        "primary-fixed-dim": "#eac244",
+                        "on-tertiary-container": "#173385",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "inverse-on-surface": "#f2f1ec",
+                        "outline-variant": "#d0c5af",
+                        "tertiary-fixed-dim": "#b6c4ff",
+                        "on-background": "#1b1c19",
+                        "inverse-surface": "#30312e",
+                        "secondary-fixed": "#e5e2e1",
+                        "background": "#fbf9f4",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "primary": "#745b00",
+                        "secondary-fixed-dim": "#c8c6c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Noto Serif"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .label-text {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 h-20 bg-[#fbf9f4]/80 backdrop-blur-xl transition-colors duration-500 shadow-[0_40px_40px_rgba(116,91,0,0.04)]">
+        <div class="flex justify-between items-center px-6 md:px-12 h-full w-full max-w-screen-2xl mx-auto">
+            <a href="home.html" class="flex items-center group no-underline">
+                <img src="Untitled design (14).png" alt="Vantage Logo" class="h-14 w-auto object-contain" />
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
+                <a class="text-[#1b1c19] transition-opacity duration-300" href="about.html">About Us</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="careers.html">Careers</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6">
+                <span
+                    class="hidden sm:block material-symbols-outlined text-primary cursor-pointer text-xl">search</span>
+                <button
+                    class="bg-primary text-on-primary px-6 md:px-8 py-2 md:py-2.5 font-serif text-sm tracking-wide hover:opacity-80 transition-all duration-200 active:scale-95">
+                    Inquiry
+                </button>
+                <button class="md:hidden text-on-surface">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero Section -->
+        <section
+            class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-20 md:mb-32 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-8">
+                <span class="label-text text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Legacy &amp;
+                    Excellence</span>
+                <h1
+                    class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] text-on-surface mb-8">
+                    Defining the Standard <br class="hidden md:block" />of Space
+                </h1>
+            </div>
+            <div class="lg:col-span-4 pb-4">
+                <p class="text-lg text-secondary leading-relaxed max-w-sm">
+                    A multi-disciplinary editorial and architectural studio dedicated to the preservation of high-craft
+                    and the pursuit of gold-standard design.
+                </p>
+            </div>
+        </section>
+
+        <!-- Image Full Width -->
+        <section class="mb-20 md:mb-32">
+            <div class="h-[400px] md:h-[716px] w-full bg-surface-container-high overflow-hidden">
+                <img class="w-full h-full object-cover grayscale-0 brightness-90 contrast-110"
+                    data-alt="monochrome architectural photograph"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0PdjaOsWX5ub7pI8Q3axHMcGgFHRrl9rbA7NSOrxO7Tk-C4f5DWIENP06ceacC8ZCaeyisMMLlJIfSryrJSkhp8gsu1I-K_doBWYm8lFfKVroIKroF0NMR9evj0vdyUBNYk3CpMCfxyNbeyxH0aXzr2IENbvVccbpMVNA2IDI_wrbb0ZF8mK98lj-dvZYS5yggvDr70fzi1Ctl1YVuIqXicOIqIJN389nXdnDNoKLd652p_LvUkf0wRyH_N_YhASZyO_0K-K4Uz0" />
+            </div>
+        </section>
+
+        <!-- Visionary Leadership -->
+        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32 md:mb-48">
+            <div
+                class="flex flex-col md:flex-row justify-between items-baseline border-b border-outline-variant/15 pb-8 mb-16 gap-4">
+                <h2 class="text-4xl font-bold tracking-tight">Visionary Leadership</h2>
+                <span class="label-text text-xs uppercase tracking-widest text-secondary">The Principals</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-16">
+                <!-- Principal 1 -->
+                <div class="group">
+                    <div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden">
+                        <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                            data-alt="portrait"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXyu_ByG1LKxhWKeW3m3odwkgDsAy__jyIDhFDPUXXMmQwBmF9Aj2Cp4I3QR606SEb9XKkNww-5131tMeXe1gMmgbHwzGrAK7cYPAf1dvOncFz0PCvttHaLm3VEXnECZoDj6zZXVKx6B5uqHx4u2J7kmokKeSmPrIrx_QPxVuORzWJj3m3jHo4wdWBcvVIZPxRMVEmvxWgO-ohHww5eLSJ5MB3YuytZcHW-DZkJn9rPJCetC4_r113JInbUDNWh4A_1Xpknm6u6t8" />
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Julian Vane</h3>
+                    <p class="label-text text-sm text-primary uppercase tracking-widest mb-4">Founding Director</p>
+                    <p class="text-secondary leading-relaxed text-sm">Pioneering the intersection of editorial curation
+                        and structural integrity for over two decades.</p>
+                </div>
+                <!-- Principal 2 -->
+                <div class="group">
+                    <div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden">
+                        <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                            data-alt="portrait"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeKTRZ11dzFH0Tbb0QuFyZoHQ0dUh-VuPPVCh3014XyHEAa9HEXbBiMp6l5uQSUspH4q7b91LNp4bYgkMWsG5MS4WLQjDz57Nw8fA71yxgB9HWTa1UPGbaIN8t-UriNt7DuJiU9k5_5EyVDJQAfEE3GFGtNZa0ECBdV995NLjlESkfjfYxckc2IFgviaXaoaJIkFBz6GUf9z2vycrTz-OeB3I3G-21d_JGQjUyP3y5DqB4hzedp5z-qzcuF_SO3vWMNwnJIM11lRo" />
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Elena Rossi</h3>
+                    <p class="label-text text-sm text-primary uppercase tracking-widest mb-4">Design Principal</p>
+                    <p class="text-secondary leading-relaxed text-sm">Specializing in the materiality of light and the
+                        psychological impact of curated interiors.</p>
+                </div>
+                <!-- Principal 3 -->
+                <div class="group">
+                    <div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden">
+                        <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                            data-alt="portrait"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPxAxOocuz3CMYCwGFFzzdActMT2KlCIxIW0ALq0vEPMgbCu4PYHITHEAkIwOK-3JHAUMPiOB2E_Ej7i-SXm4KsHBXQvRgnGqOBEWWRxcIL5d_VLjhGeIUwWCigadZ3RyO9cvOEETHOMP5zA5oExob3w5tvBEliDvin_ouZ653Tkn0sMpd6Iri453yP9wWtI3UqOWN3b9ra4YqLdD1hLVNYSDpXSX0-AwGti0R-g226uP4472Y2xonoO4WIZpMT06DAEZPG1P7BSU" />
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Arthur Sterling</h3>
+                    <p class="label-text text-sm text-primary uppercase tracking-widest mb-4">Head of Archives</p>
+                    <p class="text-secondary leading-relaxed text-sm">A custodian of architectural history, bridging the
+                        gap between legacy and modern monographs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Section -->
+        <section class="bg-on-surface text-surface py-20 md:py-32 mb-32 md:mb-48">
+            <div
+                class="px-6 md:px-12 max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Our Long-Term Strategy</h2>
+                    <p class="text-lg md:text-xl leading-relaxed text-surface-variant/80 mb-12">
+                        We operate on a decadal rhythm, ensuring that every project—from digital monograph to physical
+                        build—serves as a pillar for the next century of design excellence.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-start">
+                            <span class="text-primary-container text-2xl font-bold">01.</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Material Integrity</h4>
+                                <p class="text-surface-variant/60 text-sm">Sourcing only the finest sustainable assets
+                                    and physical components.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span class="text-primary-container text-2xl font-bold">02.</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Cultural Preservation</h4>
+                                <p class="text-surface-variant/60 text-sm">Archiving at-risk architectural movements for
+                                    future study.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative aspect-square bg-surface-container-highest/10 border border-primary/20 flex items-center justify-center p-8 md:p-12">
+                    <img class="w-full h-full object-contain" data-alt="abstract architectural sketch"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKzdLiUw5HtNY6d8vWcT5kQwGJ2oW93-elQGDmVnNJwH9kiq7oITfoNMxE9kunEqM1zfWa0c-9R2gNumbudK2sXrPo7w3qW2CgqRFdN2WTdbdUAgF49FIgUzdn0ukuPw5uWPIKjBWuIykO1nnB2k1JJdn1GFuc0BguZ3qORWjeOROzZpnQgA-Epb5dhNt6Ca1W_9dv46Qfdt1cL641R-l08uNBB5oV7W6S5bv0mopZpbLQci0klYZzfik0EPUUbPhjjQOVaNhFKmk" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32 md:mb-48">
+            <div class="text-center mb-16 md:mb-24">
+                <span class="label-text text-sm uppercase tracking-[0.4em] text-primary mb-4 block">Our Journey</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter leading-tight">A Legacy in the Making</h2>
+            </div>
+
+            <div
+                class="relative space-y-16 md:space-y-24 before:content-[''] before:absolute before:left-1/2 before:top-0 before:bottom-0 before:w-px before:bg-outline-variant/30 hidden md:block">
+                <!-- 2004 -->
+                <div class="flex items-center justify-between group">
+                    <div class="w-5/12 text-right pr-16">
+                        <span
+                            class="text-6xl font-bold text-primary/20 group-hover:text-primary transition-colors">2004</span>
+                        <h4 class="text-xl font-bold mt-2">The Foundation</h4>
+                        <p class="text-secondary mt-2 text-sm">Established as a small-scale architectural consultancy in
+                            Zurich.</p>
+                    </div>
+                    <div class="z-10 bg-primary w-4 h-4 ring-8 ring-background"></div>
+                    <div class="w-5/12"></div>
+                </div>
+                <!-- 2012 -->
+                <div class="flex items-center justify-between group">
+                    <div class="w-5/12"></div>
+                    <div class="z-10 bg-primary w-4 h-4 ring-8 ring-background"></div>
+                    <div class="w-5/12 text-left pl-16">
+                        <span
+                            class="text-6xl font-bold text-primary/20 group-hover:text-primary transition-colors">2012</span>
+                        <h4 class="text-xl font-bold mt-2">Editorial Expansion</h4>
+                        <p class="text-secondary mt-2 text-sm">Launch of 'The Gilded Monograph', a quarterly design
+                            journal.</p>
+                    </div>
+                </div>
+                <!-- 2024 -->
+                <div class="flex items-center justify-between group">
+                    <div class="w-5/12 text-right pr-16">
+                        <span
+                            class="text-6xl font-bold text-primary/20 group-hover:text-primary transition-colors">2024</span>
+                        <h4 class="text-xl font-bold mt-2">Digital Modernity</h4>
+                        <p class="text-secondary mt-2 text-sm">Transitioning to a global digital editorial platform
+                            while maintaining high-craft standards.</p>
+                    </div>
+                    <div class="z-10 bg-primary w-4 h-4 ring-8 ring-background"></div>
+                    <div class="w-5/12"></div>
+                </div>
+            </div>
+
+            <!-- Mobile Timeline -->
+            <div class="md:hidden space-y-12">
+                <div class="border-l-2 border-primary pl-6 py-2">
+                    <span class="text-4xl font-bold text-primary">2004</span>
+                    <h4 class="text-xl font-bold mt-2">The Foundation</h4>
+                    <p class="text-secondary mt-2 text-sm">Established as a small-scale architectural consultancy in
+                        Zurich.</p>
+                </div>
+                <div class="border-l-2 border-primary pl-6 py-2">
+                    <span class="text-4xl font-bold text-primary">2012</span>
+                    <h4 class="text-xl font-bold mt-2">Editorial Expansion</h4>
+                    <p class="text-secondary mt-2 text-sm">Launch of 'The Gilded Monograph', a quarterly design journal.
+                    </p>
+                </div>
+                <div class="border-l-2 border-primary pl-6 py-2">
+                    <span class="text-4xl font-bold text-primary">2024</span>
+                    <h4 class="text-xl font-bold mt-2">Digital Modernity</h4>
+                    <p class="text-secondary mt-2 text-sm">Transitioning to a global digital editorial platform.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statement Block -->
+        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32">
+            <div class="bg-surface-container-low p-12 md:p-24 text-center">
+                <p
+                    class="text-2xl md:text-4xl lg:text-5xl font-serif italic text-on-surface leading-tight max-w-4xl mx-auto">
+                    "Space is the silent protagonist of our lives. We simply give it a voice of gold."
+                </p>
+                <div class="mt-12 w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b1c19] dark:bg-[#000000] w-full py-16 border-t-0">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 w-full gap-12 max-w-screen-2xl mx-auto text-center md:text-left">
+            <div class="flex flex-col gap-4">
+                <a href="home.html" class="flex items-center group no-underline">
+                    <img src="Untitled design (14).png" alt="Vantage Logo" class="h-16 w-auto object-contain brightness-0 invert" />
+                </a>
+                <p class="font-serif text-xs md:text-sm uppercase tracking-widest text-[#5f5e5e]">© 2024 Vantage Real Estate. An Architectural Study.</p>
+            </div>
+            <div
+                class="flex flex-wrap justify-center gap-6 md:gap-10 font-serif text-xs md:text-sm uppercase tracking-widest">
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300" href="home.html">Home</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300" href="about.html">About
+                    Us</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300"
+                    href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300"
+                    href="careers.html">Careers</a>
+            </div>
+            <div class="flex gap-6">
+                <span
+                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">language</span>
+                <span
+                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">share</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

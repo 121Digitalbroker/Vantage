@@ -1,0 +1,670 @@
+<!-- Services - Vantage Gold Label -->
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="Untitled design (14).png" />
+    <title>Vantage Booking Advisory Management | Strategic Real Estate Acquisition</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#89a0f8",
+                        "on-secondary-container": "#636262",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-low": "#f5f3ee",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffe089",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#e2dfde",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5f5e5e",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-fixed": "#dce1ff",
+                        "on-tertiary-fixed": "#001550",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#745b00",
+                        "on-primary-fixed-variant": "#574400",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container": "#f0eee9",
+                        "surface-variant": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary-fixed-variant": "#274092",
+                        "tertiary": "#4159ac",
+                        "surface-container-highest": "#e4e2dd",
+                        "outline": "#7f7663",
+                        "primary-container": "#c5a022",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-container": "#483800",
+                        "surface": "#fbf9f4",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#eac244",
+                        "primary-fixed-dim": "#eac244",
+                        "on-tertiary-container": "#173385",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "inverse-on-surface": "#f2f1ec",
+                        "outline-variant": "#d0c5af",
+                        "tertiary-fixed-dim": "#b6c4ff",
+                        "on-background": "#1b1c19",
+                        "inverse-surface": "#30312e",
+                        "secondary-fixed": "#e5e2e1",
+                        "background": "#fbf9f4",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "primary": "#745b00",
+                        "secondary-fixed-dim": "#c8c6c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Noto Serif"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .serif-display {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .inter-label {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 h-20 bg-[#fbf9f4]/80 backdrop-blur-xl shadow-[0_40px_40px_rgba(116,91,0,0.04)] transition-colors duration-500">
+        <div class="flex justify-between items-center px-6 md:px-12 h-full w-full max-w-screen-2xl mx-auto">
+            <a href="home.html" class="flex items-center group no-underline">
+                <img src="Untitled design (14).png" alt="Vantage Logo" class="h-14 w-auto object-contain" />
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="about.html">About
+                    Us</a>
+                <a class="text-[#1b1c19] transition-opacity duration-300" href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="careers.html">Careers</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6">
+                <span
+                    class="hidden sm:block material-symbols-outlined text-[#745b00] cursor-pointer text-xl">search</span>
+                <button
+                    class="bg-primary text-on-primary px-6 md:px-8 py-2 md:py-2.5 font-serif text-sm tracking-wide hover:opacity-80 transition-all duration-200 active:scale-95">
+                    Inquiry
+                </button>
+                <button class="md:hidden text-on-surface">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- 1. Hero Section -->
+        <section class="relative min-h-[90vh] flex items-center overflow-hidden bg-surface py-20 lg:py-0">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-24 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="z-10 animate-fade-in">
+                    <div class="mb-6 inline-flex items-center gap-3">
+                        <span class="w-12 h-[1px] bg-primary"></span>
+                        <span class="inter-label text-xs uppercase tracking-[0.3em] text-primary font-semibold">Bespoke
+                            Advisory Firm</span>
+                    </div>
+                    <h1
+                        class="serif-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tighter text-on-surface mb-8 text-balance">
+                        Vantage Booking <br />
+                        <span class="italic font-normal text-primary">Advisory</span> <br />
+                        Management
+                    </h1>
+                    <p class="serif-display text-xl text-secondary max-w-xl leading-relaxed mb-10">
+                        A specialized division dedicated to the three pillars of premium real estate: Strategic
+                        <strong>Booking</strong>, Institutional <strong>Advisory</strong>, and Lifecycle
+                        <strong>Management</strong>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+                        <a href="#inquiry"
+                            class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 serif-display text-lg hover:opacity-90 transition-all flex items-center justify-center gap-3">
+                            Initiate Inquiry
+                            <span class="material-symbols-outlined">arrow_right_alt</span>
+                        </a>
+                        <a href="#about"
+                            class="text-on-surface inter-label text-sm uppercase tracking-widest border-b border-primary/30 pb-1 hover:border-primary transition-all">
+                            Explore the Three Pillars
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block h-[800px]">
+                    <div class="absolute inset-0 bg-surface-container-low -translate-x-12 translate-y-12"></div>
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+                        alt="Strategic Advisory"
+                        class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl z-10" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. The Three Pillars - Horizontal Slogan Section -->
+        <section class="py-24 md:py-32 bg-surface overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-20">
+                    <span class="inter-label text-xs uppercase tracking-[0.4em] text-primary mb-4 block">Core
+                        Competencies</span>
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight">The Vantage <span
+                            class="italic font-normal">Triad</span></h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                    <!-- Column 1: Booking -->
+                    <div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+                        <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80"
+                            alt="Booking"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <span
+                                class="inter-label text-[10px] uppercase tracking-[0.3em] text-primary mb-4 block">Section
+                                01</span>
+                            <h3 class="serif-display text-3xl font-bold text-on-primary mb-4">Booking</h3>
+                            <p
+                                class="serif-display text-on-primary/70 text-lg italic leading-tight group-hover:text-primary transition-colors">
+                                "Securing the Future of Luxury Acquisition."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Advisory -->
+                    <div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+                        <img src="https://images.unsplash.com/photo-1460472178825-e5240623abe5?auto=format&fit=crop&q=80"
+                            alt="Advisory"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <span
+                                class="inter-label text-[10px] uppercase tracking-[0.3em] text-primary mb-4 block">Section
+                                02</span>
+                            <h3 class="serif-display text-3xl font-bold text-on-primary mb-4">Advisory</h3>
+                            <p
+                                class="serif-display text-on-primary/70 text-lg italic leading-tight group-hover:text-primary transition-colors">
+                                "Intelligence That Redefines Market Entry."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Management -->
+                    <div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+                            alt="Management"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <span
+                                class="inter-label text-[10px] uppercase tracking-[0.3em] text-primary mb-4 block">Section
+                                03</span>
+                            <h3 class="serif-display text-3xl font-bold text-on-primary mb-4">Management</h3>
+                            <p
+                                class="serif-display text-on-primary/70 text-lg italic leading-tight group-hover:text-primary transition-colors">
+                                "Lifecycle Precision for Portfolios."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Our Advisory Approach -->
+        <section class="py-24 md:py-32 bg-surface">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+                <div class="grid lg:grid-cols-2 gap-24 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+                            alt="Advisory Approach" class="w-full h-[600px] object-cover shadow-2xl grayscale" />
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-10">The Intelligence
+                            <br /><span class="text-primary italic">Framework</span>
+                        </h2>
+                        <div class="space-y-12">
+                            <div class="flex gap-8 group">
+                                <span
+                                    class="serif-display text-3xl text-primary/30 group-hover:text-primary transition-colors">A</span>
+                                <div>
+                                    <h4 class="serif-display text-xl font-bold mb-3 uppercase tracking-widest">Market
+                                        Synthesis</h4>
+                                    <p class="text-secondary leading-relaxed text-lg">We identify emerging corridors of
+                                        growth before they reach peak market saturation, providing a temporal advantage
+                                        to our clients.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-8 group">
+                                <span
+                                    class="serif-display text-3xl text-primary/30 group-hover:text-primary transition-colors">B</span>
+                                <div>
+                                    <h4 class="serif-display text-xl font-bold mb-3 uppercase tracking-widest">Developer
+                                        Vetting</h4>
+                                    <p class="text-secondary leading-relaxed text-lg">Rigorous analysis of institutional
+                                        delivery history and financial stability ensures your capital is deployed with
+                                        maximum security.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-8 group">
+                                <span
+                                    class="serif-display text-3xl text-primary/30 group-hover:text-primary transition-colors">C</span>
+                                <div>
+                                    <h4 class="serif-display text-xl font-bold mb-3 uppercase tracking-widest">Pricing
+                                        Arbitrage</h4>
+                                    <p class="text-secondary leading-relaxed text-lg">Custom-negotiated inventory levels
+                                        allow for entry points that maximize initial equity growth from the moment of
+                                        booking.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Key Benefits -->
+        <section class="py-24 bg-surface-container-high relative overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 relative z-10">
+                <div class="text-center mb-20">
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Advantage Concierge
+                    </h2>
+                    <p class="text-secondary max-w-2xl mx-auto inter-label text-sm uppercase tracking-widest">Redefining
+                        the standards of real estate assistance</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">verified_user</span>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Inventory Priority
+                        </h4>
+                        <p class="text-secondary text-sm leading-relaxed">Direct access to corner units, premium floors,
+                            and limited-edition penthouse listings before public launch.</p>
+                    </div>
+                    <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">payments</span>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Strategic
+                            Acquisition</h4>
+                        <p class="text-secondary text-sm leading-relaxed">Institutional-grade negotiation strategies to
+                            secure the most favorable payment structures and price-points.</p>
+                    </div>
+                    <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">visibility</span>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Radical Disclosure
+                        </h4>
+                        <p class="text-secondary text-sm leading-relaxed">Absolute transparency in project risk
+                            assessments, technical specifications, and legal due diligence reports.</p>
+                    </div>
+                    <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">trending_up</span>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Yield Optimization
+                        </h4>
+                        <p class="text-secondary text-sm leading-relaxed">Focus on assets with strong rental potential
+                            and high capital appreciation velocity in established urban cores.</p>
+                    </div>
+                    <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">security</span>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Risk Management</h4>
+                        <p class="text-secondary text-sm leading-relaxed">Comprehensive tracking of construction
+                            milestones and regulatory compliance until final possession.</p>
+                    </div>
+                    <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">handshake</span>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Advisory Lifecycle
+                        </h4>
+                        <p class="text-secondary text-sm leading-relaxed">Continuous portfolio review and exit strategy
+                            advisory to maintain the liquidity and growth of your investments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Target Audience -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-12">Designed for
+                        <br /><span class="text-primary italic">Strategic Investors</span>
+                    </h2>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div
+                            class="bg-surface-container-low p-8 flex items-center gap-6 group hover:bg-primary transition-colors cursor-default">
+                            <span
+                                class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">home</span>
+                            <span
+                                class="serif-display text-lg font-bold group-hover:text-on-primary uppercase tracking-widest">Heritage
+                                Homeowners</span>
+                        </div>
+                        <div
+                            class="bg-surface-container-low p-8 flex items-center gap-6 group hover:bg-primary transition-colors cursor-default">
+                            <span
+                                class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">monitoring</span>
+                            <span
+                                class="serif-display text-lg font-bold group-hover:text-on-primary uppercase tracking-widest">Portfolio
+                                Diversifiers</span>
+                        </div>
+                        <div
+                            class="bg-surface-container-low p-8 flex items-center gap-6 group hover:bg-primary transition-colors cursor-default">
+                            <span
+                                class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">public</span>
+                            <span
+                                class="serif-display text-lg font-bold group-hover:text-on-primary uppercase tracking-widest">NRI
+                                Institutional Clients</span>
+                        </div>
+                        <div
+                            class="bg-surface-container-low p-8 flex items-center gap-6 group hover:bg-primary transition-colors cursor-default">
+                            <span
+                                class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">business</span>
+                            <span
+                                class="serif-display text-lg font-bold group-hover:text-on-primary uppercase tracking-widest">Commercial
+                                Asset Planners</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80"
+                        alt="Discerning Property" class="w-full h-[700px] object-cover shadow-2xl grayscale" />
+                    <div
+                        class="absolute -bottom-8 -left-8 bg-surface p-12 border-l-8 border-primary shadow-xl hidden xl:block">
+                        <p class="serif-display italic text-lg leading-relaxed max-w-xs">"Vantage bridges the gap
+                            between architectural ambition and financial precision."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Management Process -->
+        <section class="py-24 md:py-32 bg-primary text-on-primary overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+                <div class="mb-20 text-center">
+                    <span class="inter-label text-xs uppercase tracking-[0.4em] text-on-primary/70 mb-4 block">The
+                        Lifecycle</span>
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight">Management <span
+                            class="italic font-normal">Symphony</span></h2>
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-12 relative text-center md:text-left">
+                    <!-- Step 1 -->
+                    <div class="relative">
+                        <div class="text-6xl font-serif mb-6 opacity-30">01</div>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase">Consultation</h4>
+                        <p class="text-on-primary/70 text-sm italic">Discovery phase: Aligning investment limits and
+                            location preferences.</p>
+                        <div class="hidden lg:block absolute top-[2.5rem] -right-6 w-12 h-px bg-on-primary/20"></div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative">
+                        <div class="text-6xl font-serif mb-6 opacity-30">02</div>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase">Analytics</h4>
+                        <p class="text-on-primary/70 text-sm italic">Deep-dive technical assessment of shortlisted
+                            inventory and appreciation data.</p>
+                        <div class="hidden lg:block absolute top-[2.5rem] -right-6 w-12 h-px bg-on-primary/20"></div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="text-6xl font-serif mb-6 opacity-30">03</div>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase">Negotiation</h4>
+                        <p class="text-on-primary/70 text-sm italic">Leveraging institutional relationships to secure
+                            favorable booking terms.</p>
+                        <div class="hidden lg:block absolute top-[2.5rem] -right-6 w-12 h-px bg-on-primary/20"></div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="relative">
+                        <div class="text-6xl font-serif mb-6 opacity-30">04</div>
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase">Execution</h4>
+                        <p class="text-on-primary/70 text-sm italic">Streamlined documentation and formal booking
+                            coordination.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Why Vantage -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+                <div class="grid lg:grid-cols-2 gap-24 items-center">
+                    <div>
+                        <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-10">Advocacy &
+                            <br /><span class="text-primary italic">Assurance</span>
+                        </h2>
+                        <p class="text-secondary body-lg mb-12 serif-display text-lg">Vantage is not a brokerage; we are
+                            an advisory firm. Our commitment is entirely aligned with your financial legacy and
+                            portfolio performance.</p>
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <span class="material-symbols-outlined text-primary text-3xl">star_rate</span>
+                                <div>
+                                    <h5 class="serif-display text-xl font-bold mb-2 uppercase tracking-tight">Preferred
+                                        Partner Status</h5>
+                                    <p class="text-sm text-secondary serif-display">Direct integration with Tier-1
+                                        developer committees for exclusive inventory.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <span class="material-symbols-outlined text-primary text-3xl">insights</span>
+                                <div>
+                                    <h5 class="serif-display text-xl font-bold mb-2 uppercase tracking-tight">
+                                        Proprietary Research</h5>
+                                    <p class="text-sm text-secondary serif-display">Internal market intelligence reports
+                                        updated weekly to catch micro-shifts in demand.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                                <div>
+                                    <h5 class="serif-display text-xl font-bold mb-2 uppercase tracking-tight">Legal
+                                        Fidelity</h5>
+                                    <p class="text-sm text-secondary serif-display">Complete vetting of RERA compliance
+                                        and title searches prior to client recommendation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-high p-12 md:p-24 shadow-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
+                        <div class="relative z-10">
+                            <h3 class="serif-display text-3xl font-bold mb-8">Management Oversight</h3>
+                            <p class="text-secondary mb-12 italic serif-display text-lg leading-relaxed">"We don't just
+                                find your next property; we manage the trajectory of your investment from the first
+                                booking signature."</p>
+                            <a href="#inquiry"
+                                class="inline-flex items-center gap-4 text-primary font-bold inter-label text-sm uppercase tracking-widest border-b border-primary/20 pb-2 hover:border-primary transition-all">
+                                Request Private Consultation <span class="material-symbols-outlined">north_east</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Investment Intelligence -->
+        <section class="py-24 bg-surface-container-lowest border-y border-outline-variant/10">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-12">Advisory <span
+                            class="text-primary italic">Intelligence</span> Metrics</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div class="p-10 border border-outline-variant/20 hover:border-primary/30 transition-all">
+                            <span
+                                class="inter-label text-xs uppercase tracking-[0.3em] text-secondary mb-6 block">Target
+                                Yield</span>
+                            <div class="serif-display text-5xl font-bold text-primary mb-4">7.2%</div>
+                            <p class="text-sm text-secondary serif-display">Weighted Average Net Operating Income for
+                                Managed Assets</p>
+                        </div>
+                        <div class="p-10 border border-outline-variant/20 hover:border-primary/30 transition-all">
+                            <span
+                                class="inter-label text-xs uppercase tracking-[0.3em] text-secondary mb-6 block">Growth
+                                Velocity</span>
+                            <div class="serif-display text-5xl font-bold text-primary mb-4">22%</div>
+                            <p class="text-sm text-secondary serif-display">Average Year-on-Year Capital Appreciation in
+                                Focus Corridors</p>
+                        </div>
+                        <div class="p-10 border border-outline-variant/20 hover:border-primary/30 transition-all">
+                            <span
+                                class="inter-label text-xs uppercase tracking-[0.3em] text-secondary mb-6 block">Volume
+                                Managed</span>
+                            <div class="serif-display text-5xl font-bold text-primary mb-4">$8.4B</div>
+                            <p class="text-sm text-secondary serif-display">Cumulative Transaction Value Under Strategic
+                                Advisory</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Final Call To Action -->
+        <section id="inquiry" class="py-24 md:py-32 px-6 md:px-12 bg-surface">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="bg-on-background text-on-primary p-12 md:p-24 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 -skew-x-12 translate-x-1/4"></div>
+                    <div class="relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+                        <div>
+                            <span
+                                class="inter-label text-xs uppercase tracking-[0.5em] text-primary mb-8 block font-bold">Initiate
+                                Engagement</span>
+                            <h2
+                                class="serif-display text-4xl md:text-7xl font-bold tracking-tighter mb-10 leading-[1.1]">
+                                Elite Booking & <br /><span class="text-primary italic">Advisory</span> Concierge</h2>
+                            <p
+                                class="text-on-primary/60 text-lg md:text-xl serif-display leading-relaxed mb-12 max-w-lg">
+                                Contact a managing partner to discuss your acquisition objectives and secure priority
+                                access to upcoming pre-launch inventory.</p>
+
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-6">
+                                    <span class="material-symbols-outlined text-primary text-3xl">alternate_email</span>
+                                    <span
+                                        class="inter-label text-sm uppercase tracking-widest font-bold">advisory@vantage.estate</span>
+                                </div>
+                                <div class="flex items-center gap-6">
+                                    <span class="material-symbols-outlined text-primary text-3xl">call</span>
+                                    <span class="inter-label text-sm uppercase tracking-widest font-bold">+1 (212)
+                                        VANTAGE</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="bg-surface p-12 shadow-2xl text-on-surface">
+                            <div class="space-y-10">
+                                <div
+                                    class="group border-b border-outline-variant py-4 focus-within:border-primary transition-colors">
+                                    <label
+                                        class="inter-label text-[10px] uppercase tracking-widest text-secondary block mb-1">Full
+                                        Name</label>
+                                    <input type="text" placeholder="ALEXANDER VOGUE"
+                                        class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl placeholder:text-outline-variant/30"
+                                        required>
+                                </div>
+                                <div
+                                    class="group border-b border-outline-variant py-4 focus-within:border-primary transition-colors">
+                                    <label
+                                        class="inter-label text-[10px] uppercase tracking-widest text-secondary block mb-1">Electronic
+                                        Mail</label>
+                                    <input type="email" placeholder="vogue@estate.com"
+                                        class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl placeholder:text-outline-variant/30"
+                                        required>
+                                </div>
+                                <div
+                                    class="group border-b border-outline-variant py-4 focus-within:border-primary transition-colors">
+                                    <label
+                                        class="inter-label text-[10px] uppercase tracking-widest text-secondary block mb-1">Inquiry
+                                        Pillar</label>
+                                    <select
+                                        class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl uppercase tracking-tighter">
+                                        <option>Strategic Booking</option>
+                                        <option>Advisory Management</option>
+                                        <option>Portfolio Concierge</option>
+                                    </select>
+                                </div>
+                                <button type="submit"
+                                    class="w-full bg-primary text-on-primary py-6 md:py-8 inter-label text-sm font-bold uppercase tracking-[0.3em] hover:bg-on-primary-container transition-all">Submit
+                                    Formal Inquiry</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b1c19] w-full py-16 border-t-0">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 w-full gap-12 max-w-screen-2xl mx-auto text-center md:text-left">
+            <div class="flex flex-col gap-4">
+                <a href="home.html" class="flex items-center group no-underline">
+                    <img src="Untitled design (14).png" alt="Vantage Logo"
+                        class="h-16 w-auto object-contain brightness-0 invert" />
+                </a>
+                <p class="font-serif text-xs md:text-sm uppercase tracking-widest text-[#5f5e5e]">© 2024 Vantage Real
+                    Estate. An Architectural Study.</p>
+            </div>
+            <div
+                class="flex flex-wrap justify-center gap-6 md:gap-10 font-serif text-xs md:text-sm uppercase tracking-widest">
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300" href="home.html">Home</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300" href="about.html">About
+                    Us</a>
+                <a class="text-[#fbf9f4] transition-colors duration-300 underline underline-offset-8"
+                    href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300"
+                    href="careers.html">Careers</a>
+            </div>
+            <div class="flex gap-6">
+                <span
+                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">language</span>
+                <span
+                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">share</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

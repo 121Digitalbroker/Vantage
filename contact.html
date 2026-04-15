@@ -1,0 +1,289 @@
+<!-- Contact - Vantage Gold Label -->
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="Untitled design (14).png" />
+    <title>Contact | The Gilded Editorial</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#89a0f8",
+                        "on-secondary-container": "#636262",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-low": "#f5f3ee",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffe089",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#e2dfde",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5f5e5e",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-fixed": "#dce1ff",
+                        "on-tertiary-fixed": "#001550",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#745b00",
+                        "on-primary-fixed-variant": "#574400",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container": "#f0eee9",
+                        "surface-variant": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary-fixed-variant": "#274092",
+                        "tertiary": "#4159ac",
+                        "surface-container-highest": "#e4e2dd",
+                        "outline": "#7f7663",
+                        "primary-container": "#c5a022",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-container": "#483800",
+                        "surface": "#fbf9f4",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#eac244",
+                        "primary-fixed-dim": "#eac244",
+                        "on-tertiary-container": "#173385",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "inverse-on-surface": "#f2f1ec",
+                        "outline-variant": "#d0c5af",
+                        "tertiary-fixed-dim": "#b6c4ff",
+                        "on-background": "#1b1c19",
+                        "inverse-surface": "#30312e",
+                        "secondary-fixed": "#e5e2e1",
+                        "background": "#fbf9f4",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "primary": "#745b00",
+                        "secondary-fixed-dim": "#c8c6c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Noto Serif"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .label-font {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 h-20 bg-[#fbf9f4]/80 backdrop-blur-xl transition-colors duration-500 shadow-[0_40px_40px_rgba(116,91,0,0.04)]">
+        <div class="flex justify-between items-center px-6 md:px-12 h-full w-full max-w-screen-2xl mx-auto">
+            <a href="home.html" class="flex items-center group no-underline">
+                <img src="Untitled design (14).png" alt="Vantage Logo" class="h-14 w-auto object-contain" />
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="about.html">About
+                    Us</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="careers.html">Careers</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6">
+                <button
+                    class="bg-primary text-on-primary px-6 md:px-8 py-2 md:py-2.5 font-serif text-sm tracking-wide hover:opacity-80 transition-all duration-200 active:scale-95">
+                    Inquiry
+                </button>
+                <button class="md:hidden text-on-surface">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 md:pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+        <!-- Hero Section -->
+        <header class="mb-16 md:mb-24">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-none mb-8">Get in Touch</h1>
+            <div class="h-px w-32 bg-primary mb-8"></div>
+            <p class="text-lg md:text-xl md:text-2xl text-secondary max-w-2xl leading-relaxed">
+                Connect with our architectural curators to discuss monographs, collection acquisitions, or bespoke
+                design studies.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 lg:gap-24">
+            <!-- Inquiry Form -->
+            <section class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-10 md:mb-12 tracking-tight">Inquiry Form</h2>
+                    <form class="space-y-10" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                            <div class="space-y-2">
+                                <label class="label-font text-xs uppercase tracking-widest text-secondary">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors placeholder:text-outline/50 text-sm md:text-base"
+                                    placeholder="Julian Vane" type="text" name="name" required />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="label-font text-xs uppercase tracking-widest text-secondary">Email
+                                    Address</label>
+                                <input
+                                    class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors placeholder:text-outline/50 text-sm md:text-base"
+                                    placeholder="vane@architect.com" type="email" name="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="label-font text-xs uppercase tracking-widest text-secondary">Inquiry
+                                Type</label>
+                            <select
+                                class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors text-sm md:text-base" name="inquiry_type">
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Acquisition Request">Acquisition Request</option>
+                                <option value="Monograph Submission">Monograph Submission</option>
+                                <option value="Press & Media">Press & Media</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="label-font text-xs uppercase tracking-widest text-secondary">Message</label>
+                            <textarea
+                                class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors placeholder:text-outline/50 resize-none text-sm md:text-base"
+                                placeholder="Tell us about your project..." rows="4" name="message" required></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="bg-primary text-on-primary px-12 py-4 text-base md:text-lg font-bold hover:bg-primary-container transition-colors duration-300 w-full md:w-auto">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+                <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-5 space-y-16 md:space-y-20">
+                <!-- Location -->
+                <div class="space-y-6 md:space-y-8">
+                    <div class="inline-block bg-primary-container/10 px-4 py-1">
+                        <span
+                            class="label-font text-[10px] md:text-xs font-bold text-primary uppercase tracking-[0.2em]">Global
+                            Presence</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">London Headquarters</h2>
+                    <div class="aspect-video sm:aspect-square w-full bg-surface-container-high overflow-hidden">
+                        <img class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
+                            data-alt="London Headquarters"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuADuzlMXWxXD_dBd-3pRFJC7Md0v4tQmoEHssu4UcwqSIJ6cFodvKhjEQ3wJfFp-YRVcc-0VGe_zlQJ9Vgt3TQeKxlj9dNKXomS-vA13ki28EeARrdqr_w9ifTY9hDhBJVaQEljIee98F8MzFn4xO5v98_IWoO9jFLx2w9Q96PqUdfhO45GhM5S5iD2mGV6RsIsBMMjVOW_XrNTRryybP2-LUm1UJDr5WGlBbiMOqlaqI4QkUN6qSXc9wgneJxP3EFUUW-pCVNXRv8" />
+                    </div>
+                    <address class="not-italic space-y-4">
+                        <p class="text-lg md:text-xl font-medium">12 Mayfair Square, London, W1J 8AJ</p>
+                        <p class="text-secondary label-font text-xs md:text-sm uppercase tracking-widest">Appointment
+                            Only</p>
+                    </address>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="p-8 md:p-10 border border-primary/10 bg-surface-container-lowest relative">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Expert insights delivered to your inbox</h3>
+                    <p class="text-secondary mb-8 leading-relaxed text-sm md:text-base">Join our inner circle for weekly
+                        architectural critiques and highlights.</p>
+                    <div class="flex flex-col space-y-4">
+                        <input
+                            class="bg-surface-container border-0 px-6 py-4 focus:ring-1 focus:ring-primary outline-none text-sm"
+                            placeholder="Enter your email" type="email" />
+                        <button
+                            class="bg-on-surface text-surface py-4 font-bold hover:bg-primary transition-colors duration-300 text-sm md:text-base">Subscribe</button>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
+                    <div>
+                        <p class="label-font text-[10px] uppercase tracking-[0.3em] text-secondary mb-2">Phone</p>
+                        <p class="text-base md:text-lg font-bold">+44 (0) 20 7946 0123</p>
+                    </div>
+                    <div>
+                        <p class="label-font text-[10px] uppercase tracking-[0.3em] text-secondary mb-2">Email</p>
+                        <p class="text-base md:text-lg font-bold">concierge@vantage.com</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Map Section -->
+    <section class="w-full h-[400px] md:h-[600px] bg-surface-container-high mt-12 md:mt-24 relative overflow-hidden">
+        <div class="absolute inset-0 grayscale contrast-125 opacity-40 mix-blend-multiply"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRTq5uCuW_TF0TPsehYzBnpbrm_56B4Sfjlv5BmAkF4buSV3j3vbtxHJcpKwgfJJ7Q5GlJPbWZ_KqzsdhpeYpw_s4oVAy3bdk4ywMTNC0m2LsJK120TRkANH0mZKB-uFYtwCOAmMR7hjsGHfIc41bzmRP5nui0j4KtLXnicRFyOcUD80uSrKPq68tfCrjmHKzRx03BuAz9K8mdTIXxzUcaKg74mM5IetFmbyZlOXJ4cwkj1bm53gujOsHnIH8qVoDre2RNQ8piOEM"); background-size: cover; background-position: center center;'>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none p-6">
+            <div class="bg-primary p-4 md:p-6 shadow-2xl flex items-center gap-4">
+                <span class="material-symbols-outlined text-on-primary text-3xl md:text-4xl">location_on</span>
+                <div class="text-on-primary">
+                    <p class="label-font font-bold uppercase tracking-widest text-[10px]">Our Studio</p>
+                    <p class="text-lg md:text-xl font-serif">London, Mayfair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b1c19] w-full py-16 border-t-0">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 w-full gap-8 max-w-screen-2xl mx-auto text-center md:text-left">
+            <div class="flex flex-col gap-4">
+                <a href="home.html" class="flex items-center group no-underline">
+                    <img src="Untitled design (14).png" alt="Vantage Logo" class="h-16 w-auto object-contain brightness-0 invert" />
+                </a>
+                <p class="font-serif text-xs md:text-sm uppercase tracking-widest text-[#5f5e5e]">© 2024 Vantage Real Estate. An Architectural Study.</p>
+            </div>
+            <div
+                class="flex flex-wrap justify-center gap-6 md:gap-8 font-serif text-xs md:text-sm uppercase tracking-widest">
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors" href="home.html">Home</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors" href="about.html">About Us</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors" href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors" href="careers.html">Careers</a>
+            </div>
+            <div class="flex gap-6">
+                <span
+                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">language</span>
+                <span
+                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">share</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+>
+
+</html>
