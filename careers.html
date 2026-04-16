@@ -7,18 +7,20 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V43WGEX72G"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-V43WGEX72G');
+        gtag('config', 'G-V43WGEX72G');
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="Untitled design (14).png" />
     <title>Institutional Careers | Join the Vantage Advisory Group | Noida</title>
-    <meta name="description" content="Build your career at Vantage Realtors. Join a group of institutional advisory professionals in our Noida headquarters at Bhutani Alphathum.">
-    <meta name="keywords" content="Real Estate Careers Noida, Join Vantage Realtors, Bhutani Alphathum Jobs, Institutional Advisory Careers">
+    <meta name="description"
+        content="Build your career at Vantage Realtors. Join a group of institutional advisory professionals in our Noida headquarters at Bhutani Alphathum.">
+    <meta name="keywords"
+        content="Real Estate Careers Noida, Join Vantage Realtors, Bhutani Alphathum Jobs, Institutional Advisory Careers">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
@@ -130,10 +132,13 @@
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="about.html">About</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="about.html">About</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="services.html">Services</a>
                 <a class="text-[#1b1c19] transition-opacity duration-300" href="careers.html">Careers</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="contact.html">Contact</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="contact.html">Contact</a>
             </div>
             <div class="flex items-center gap-4 md:gap-6">
                 <span
@@ -144,12 +149,21 @@
                         Inquiry
                     </button>
                 </a>
-                <button class="md:hidden text-on-surface">
+                <button id="mobile-menu-btn" class="md:hidden text-on-surface z-50 relative">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-24 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-screen overflow-y-auto pb-10">
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="home.html">Home</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="services.html">Services</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="careers.html">Careers</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="contact.html">Contact</a>
+    </div>
 
     <main class="pt-20">
         <!-- Hero Section -->
@@ -195,19 +209,22 @@
                             class="p-8 md:p-10 bg-surface-container-lowest transition-colors hover:bg-surface-container">
                             <span class="material-symbols-outlined text-4xl text-primary mb-6">currency_exchange</span>
                             <h3 class="text-2xl font-headline font-bold mb-4">Strategic Broking</h3>
-                            <p class="text-secondary leading-relaxed text-sm">Facilitating high-value transactions with unparalleled precision and financial integrity.</p>
+                            <p class="text-secondary leading-relaxed text-sm">Facilitating high-value transactions with
+                                unparalleled precision and financial integrity.</p>
                         </div>
                         <div
                             class="p-8 md:p-10 bg-surface-container-lowest transition-colors hover:bg-surface-container">
                             <span class="material-symbols-outlined text-4xl text-primary mb-6">analytics</span>
                             <h3 class="text-2xl font-headline font-bold mb-4">Institutional Advisory</h3>
-                            <p class="text-secondary leading-relaxed text-sm">Providing deep-market insights and strategic guidance for complex portfolios.</p>
+                            <p class="text-secondary leading-relaxed text-sm">Providing deep-market insights and
+                                strategic guidance for complex portfolios.</p>
                         </div>
                         <div
                             class="p-8 md:p-10 bg-surface-container-lowest transition-colors hover:bg-surface-container">
                             <span class="material-symbols-outlined text-4xl text-primary mb-6">account_balance</span>
                             <h3 class="text-2xl font-headline font-bold mb-4">Asset Management</h3>
-                            <p class="text-secondary leading-relaxed text-sm">Optimizing the lifecycle and performance of premium real estate assets globally.</p>
+                            <p class="text-secondary leading-relaxed text-sm">Optimizing the lifecycle and performance
+                                of premium real estate assets globally.</p>
                         </div>
                     </div>
                 </div>
@@ -329,23 +346,30 @@
                 <!-- Col 1: Brand -->
                 <div class="space-y-8">
                     <a href="home.html" class="inline-block">
-                        <img src="Untitled design (14).png" alt="Vantage Logo" class="h-16 w-auto object-contain brightness-0 invert" />
+                        <img src="Untitled design (14).png" alt="Vantage Logo"
+                            class="h-16 w-auto object-contain brightness-0 invert" />
                     </a>
                     <p class="text-[#5f5e5e] text-sm leading-relaxed max-w-xs font-serif italic">
                         "Synthesizing architectural integrity with financial precision since 2004."
                     </p>
-                    <p class="font-serif text-[10px] uppercase tracking-widest text-[#5f5e5e]/60">© 2024 Vantage Real Estate. <br/>An Architectural Study.</p>
+                    <p class="font-serif text-[10px] uppercase tracking-widest text-[#5f5e5e]/60">© 2024 Vantage Real
+                        Estate. <br />An Architectural Study.</p>
                 </div>
 
                 <!-- Col 2: Directory -->
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Directory</h5>
                     <nav class="flex flex-col gap-4 font-serif text-sm tracking-widest">
-                        <a href="home.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Home</a>
-                        <a href="about.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">About</a>
-                        <a href="services.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Services</a>
-                        <a href="careers.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Careers</a>
-                        <a href="contact.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Contact</a>
+                        <a href="home.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Home</a>
+                        <a href="about.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">About</a>
+                        <a href="services.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Services</a>
+                        <a href="careers.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Careers</a>
+                        <a href="contact.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Contact</a>
                     </nav>
                 </div>
 
@@ -353,9 +377,11 @@
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Concierge</h5>
                     <div class="flex flex-col gap-6 text-[#5f5e5e] font-serif text-sm italic">
-                        <a href="mailto:sales@vantagerealtors.in" class="hover:text-white transition-colors">sales@vantagerealtors.in</a>
+                        <a href="mailto:sales@vantagerealtors.in"
+                            class="hover:text-white transition-colors">sales@vantagerealtors.in</a>
                         <a href="tel:+917982614992" class="hover:text-white transition-colors">+91 79826 14992</a>
-                        <p class="leading-relaxed">924, Tower B, Bhutani Alphathum,<br/>Sector 90, Noida (UP) 201305</p>
+                        <p class="leading-relaxed">924, Tower B, Bhutani Alphathum,<br />Sector 90, Noida (UP) 201305
+                        </p>
                     </div>
                 </div>
 
@@ -363,19 +389,24 @@
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Reach Out</h5>
                     <div class="flex gap-4">
-                        <a href="https://www.instagram.com/vantagerealtors.in" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://www.instagram.com/vantagerealtors.in"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/113372931/" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://www.linkedin.com/company/113372931/"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=61575448566057" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://www.facebook.com/profile.php?id=61575448566057"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="#"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a href="https://wa.me/917982614992" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://wa.me/917982614992"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -383,6 +414,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('.material-symbols-outlined');
+
+            if (btn && menu && icon) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('flex');
+                    if (menu.classList.contains('hidden')) {
+                        icon.textContent = 'menu';
+                        document.body.style.overflow = 'auto';
+                    } else {
+                        icon.textContent = 'close';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

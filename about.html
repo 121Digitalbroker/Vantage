@@ -7,18 +7,20 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V43WGEX72G"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-V43WGEX72G');
+        gtag('config', 'G-V43WGEX72G');
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="Untitled design (14).png" />
     <title>Our Heritage | Vantage Realtors - The Standard in Institutional Advisory</title>
-    <meta name="description" content="Discover the philosophy behind Vantage Realtors. Headquartered in Noida, we are redefining real estate advisory through institutional precision and capital management expertise.">
-    <meta name="keywords" content="Vantage Realtors Heritage, About Vantage Noida, Real Estate Consultancy Noida, Institutional Real Estate Advisory">
+    <meta name="description"
+        content="Discover the philosophy behind Vantage Realtors. Headquartered in Noida, we are redefining real estate advisory through institutional precision and capital management expertise.">
+    <meta name="keywords"
+        content="Vantage Realtors Heritage, About Vantage Noida, Real Estate Consultancy Noida, Institutional Real Estate Advisory">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -123,9 +125,12 @@
             <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
                 <a class="text-[#1b1c19] transition-opacity duration-300" href="about.html">About</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="services.html">Services</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="careers.html">Careers</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="contact.html">Contact</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="services.html">Services</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="careers.html">Careers</a>
+                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                    href="contact.html">Contact</a>
             </div>
             <div class="flex items-center gap-4 md:gap-6">
                 <span
@@ -136,29 +141,36 @@
                         Inquiry
                     </button>
                 </a>
-                <button class="md:hidden text-on-surface">
+                <button id="mobile-menu-btn" class="md:hidden text-on-surface z-50 relative">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
             </div>
         </div>
     </nav>
 
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-24 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-screen overflow-y-auto pb-10">
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="home.html">Home</a>
+        <a class="text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="services.html">Services</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="careers.html">Careers</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="contact.html">Contact</a>
+    </div>
+
     <main class="pt-32 pb-24">
         <!-- Hero Section -->
         <section
             class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-20 md:mb-32 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div class="lg:col-span-8">
-                <span class="label-text text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Legacy &amp;
-                    Excellence</span>
+                <span class="label-text text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Premier Real Estate Advisory</span>
                 <h1
                     class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] text-on-surface mb-8">
-                    Defining the Standard <br class="hidden md:block" />of Space
+                    About Vantage <br class="hidden md:block" />Realtors
                 </h1>
             </div>
             <div class="lg:col-span-4 pb-4">
                 <p class="text-lg text-secondary leading-relaxed max-w-sm">
-                    A multi-disciplinary editorial and architectural studio dedicated to the preservation of high-craft
-                    and the pursuit of gold-standard design.
+                    Redefining the real estate experience by combining deep local expertise with a forward-thinking approach to property investment.
                 </p>
             </div>
         </section>
@@ -172,134 +184,24 @@
             </div>
         </section>
 
-        <!-- Accordion Leadership Section -->
+        <!-- Firm Narrative Section -->
         <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32 md:mb-48">
-            <style>
-                .accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease; opacity: 0; }
-                .accordion-panel.open { max-height: 2000px; opacity: 1; }
-                .accordion-chevron { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-                .accordion-chevron.rotated { transform: rotate(180deg); }
-                .accordion-tab { cursor: pointer; user-select: none; }
-                .accordion-tab:hover .accordion-gold-line { width: 100%; }
-                .accordion-gold-line { width: 0; height: 2px; background: #745b00; transition: width 0.5s ease; position: absolute; bottom: 0; left: 0; }
-                .accordion-tab.active .accordion-gold-line { width: 100%; }
-            </style>
-
-            <!-- Accordion Tab 1: Visionary Leadership -->
-            <div class="border-b border-outline-variant/15">
-                <div class="accordion-tab active relative flex flex-col md:flex-row justify-between items-center py-8 gap-4"
-                     onclick="toggleAccordion('panel-leadership', this)">
-                    <div class="flex items-center gap-6">
-                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Visionary Leadership</h2>
-                        <span class="label-text text-xs uppercase tracking-widest text-secondary hidden md:inline">The Principals</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="label-text text-xs uppercase tracking-widest text-primary font-bold">3 Members</span>
-                        <span class="material-symbols-outlined accordion-chevron rotated text-primary text-3xl">expand_more</span>
-                    </div>
-                    <div class="accordion-gold-line"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8">
+                    <p class="text-2xl font-serif italic text-on-surface leading-relaxed">
+                        "Based in the heart of Noida, we serve as a premier destination for individuals and institutional investors seeking high-value opportunities in one of India's most dynamic urban landscapes."
+                    </p>
+                    <p class="text-secondary leading-relaxed">
+                        Our expertise spans across Residential and Commercial sectors, ensuring that whether you are searching for a luxury residence or a high-yield retail space, you receive unparalleled market insights. We pride ourselves on a service model built on three core pillars designed for the sophisticated investor.
+                    </p>
                 </div>
-                <div id="panel-leadership" class="accordion-panel open">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-16 py-16">
-                        <!-- Principal 1 -->
-                        <div class="group">
-                            <div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden">
-                                <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
-                                    data-alt="portrait"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXyu_ByG1LKxhWKeW3m3odwkgDsAy__jyIDhFDPUXXMmQwBmF9Aj2Cp4I3QR606SEb9XKkNww-5131tMeXe1gMmgbHwzGrAK7cYPAf1dvOncFz0PCvttHaLm3VEXnECZoDj6zZXVKx6B5uqHx4u2J7kmokKeSmPrIrx_QPxVuORzWJj3m3jHo4wdWBcvVIZPxRMVEmvxWgO-ohHww5eLSJ5MB3YuytZcHW-DZkJn9rPJCetC4_r113JInbUDNWh4A_1Xpknm6u6t8" />
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2">Julian Vane</h3>
-                            <p class="label-text text-sm text-primary uppercase tracking-widest mb-4">Founding Director</p>
-                            <p class="text-secondary leading-relaxed text-sm">Pioneering the intersection of editorial curation
-                                and structural integrity for over two decades.</p>
-                        </div>
-                        <!-- Principal 2 -->
-                        <div class="group">
-                            <div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden">
-                                <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
-                                    data-alt="portrait"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeKTRZ11dzFH0Tbb0QuFyZoHQ0dUh-VuPPVCh3014XyHEAa9HEXbBiMp6l5uQSUspH4q7b91LNp4bYgkMWsG5MS4WLQjDz57Nw8fA71yxgB9HWTa1UPGbaIN8t-UriNt7DuJiU9k5_5EyVDJQAfEE3GFGtNZa0ECBdV995NLjlESkfjfYxckc2IFgviaXaoaJIkFBz6GUf9z2vycrTz-OeB3I3G-21d_JGQjUyP3y5DqB4hzedp5z-qzcuF_SO3vWMNwnJIM11lRo" />
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2">Elena Rossi</h3>
-                            <p class="label-text text-sm text-primary uppercase tracking-widest mb-4">Design Principal</p>
-                            <p class="text-secondary leading-relaxed text-sm">Specializing in the materiality of light and the
-                                psychological impact of curated interiors.</p>
-                        </div>
-                        <!-- Principal 3 -->
-                        <div class="group">
-                            <div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden">
-                                <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
-                                    data-alt="portrait"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPxAxOocuz3CMYCwGFFzzdActMT2KlCIxIW0ALq0vEPMgbCu4PYHITHEAkIwOK-3JHAUMPiOB2E_Ej7i-SXm4KsHBXQvRgnGqOBEWWRxcIL5d_VLjhGeIUwWCigadZ3RyO9cvOEETHOMP5zA5oExob3w5tvBEliDvin_ouZ653Tkn0sMpd6Iri453yP9wWtI3UqOWN3b9ra4YqLdD1hLVNYSDpXSX0-AwGti0R-g226uP4472Y2xonoO4WIZpMT06DAEZPG1P7BSU" />
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2">Arthur Sterling</h3>
-                            <p class="label-text text-sm text-primary uppercase tracking-widest mb-4">Head of Archives</p>
-                            <p class="text-secondary leading-relaxed text-sm">A custodian of architectural history, bridging the
-                                gap between legacy and modern monographs.</p>
-                        </div>
-                    </div>
+                <div class="bg-surface-container-low p-12 border-l-4 border-primary">
+                    <h3 class="text-2xl font-bold mb-6">Our Mission</h3>
+                    <p class="text-secondary leading-relaxed">
+                        At Vantage Realtors, we don't just close deals; we build lasting partnerships. We understand that real estate is often your most significant investment, and our mission is to provide the "Vantage" point necessary to make informed, profitable decisions.
+                    </p>
                 </div>
             </div>
-
-            <!-- Accordion Tab 2: Advisory Board (Example for future use) -->
-            <div class="border-b border-outline-variant/15">
-                <div class="accordion-tab relative flex flex-col md:flex-row justify-between items-center py-8 gap-4"
-                     onclick="toggleAccordion('panel-advisory', this)">
-                    <div class="flex items-center gap-6">
-                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Advisory Board</h2>
-                        <span class="label-text text-xs uppercase tracking-widest text-secondary hidden md:inline">Strategic Counsel</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="label-text text-xs uppercase tracking-widest text-primary font-bold">Coming Soon</span>
-                        <span class="material-symbols-outlined accordion-chevron text-primary text-3xl">expand_more</span>
-                    </div>
-                    <div class="accordion-gold-line"></div>
-                </div>
-                <div id="panel-advisory" class="accordion-panel">
-                    <div class="py-16 text-center">
-                        <p class="text-secondary italic text-lg font-serif">Our advisory board roster will be announced soon. Stay connected.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Accordion Tab 3: Regional Directors (Example for future use) -->
-            <div class="border-b border-outline-variant/15">
-                <div class="accordion-tab relative flex flex-col md:flex-row justify-between items-center py-8 gap-4"
-                     onclick="toggleAccordion('panel-regional', this)">
-                    <div class="flex items-center gap-6">
-                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Regional Directors</h2>
-                        <span class="label-text text-xs uppercase tracking-widest text-secondary hidden md:inline">Market Operations</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="label-text text-xs uppercase tracking-widest text-primary font-bold">Coming Soon</span>
-                        <span class="material-symbols-outlined accordion-chevron text-primary text-3xl">expand_more</span>
-                    </div>
-                    <div class="accordion-gold-line"></div>
-                </div>
-                <div id="panel-regional" class="accordion-panel">
-                    <div class="py-16 text-center">
-                        <p class="text-secondary italic text-lg font-serif">Regional leadership appointments are currently in progress.</p>
-                    </div>
-                </div>
-            </div>
-
-            <script>
-                function toggleAccordion(panelId, tabEl) {
-                    const panel = document.getElementById(panelId);
-                    const chevron = tabEl.querySelector('.accordion-chevron');
-                    const isOpen = panel.classList.contains('open');
-
-                    if (isOpen) {
-                        panel.classList.remove('open');
-                        chevron.classList.remove('rotated');
-                        tabEl.classList.remove('active');
-                    } else {
-                        panel.classList.add('open');
-                        chevron.classList.add('rotated');
-                        tabEl.classList.add('active');
-                    }
-                }
-            </script>
         </section>
 
         <!-- Strategy Section -->
@@ -307,30 +209,30 @@
             <div
                 class="px-6 md:px-12 max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Our Strategic Pillars</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Our Core Pillars</h2>
                     <p class="text-lg md:text-xl leading-relaxed text-surface-variant/80 mb-12">
-                        We synthesize market intelligence, institutional advisory, and lifecycle management into a singular, high-fidelity real estate experience.
+                        We pride ourselves on a service model built on three core pillars that facilitate the Noida real estate ecosystem.
                     </p>
                     <div class="space-y-8">
                         <div class="flex gap-6 items-start">
                             <span class="text-primary-container text-2xl font-bold">01.</span>
                             <div>
-                                <h4 class="text-xl font-bold mb-2">Strategic Broking</h4>
-                                <p class="text-surface-variant/60 text-sm">Facilitating high-value transactions with unparalleled precision and financial integrity.</p>
+                                <h4 class="text-xl font-bold mb-2">Property Broking</h4>
+                                <p class="text-surface-variant/60 text-sm">Facilitating seamless transactions with a curated portfolio of the region’s most sought-after addresses.</p>
                             </div>
                         </div>
                         <div class="flex gap-6 items-start">
                             <span class="text-primary-container text-2xl font-bold">02.</span>
                             <div>
-                                <h4 class="text-xl font-bold mb-2">Institutional Advisory</h4>
-                                <p class="text-surface-variant/60 text-sm">Providing deep-market insights and strategic guidance for complex portfolios.</p>
+                                <h4 class="text-xl font-bold mb-2">Investment Consultancy</h4>
+                                <p class="text-surface-variant/60 text-sm">Providing data-driven advice to maximize capital appreciation and secure sustainable rental yields.</p>
                             </div>
                         </div>
                         <div class="flex gap-6 items-start">
                             <span class="text-primary-container text-2xl font-bold">03.</span>
                             <div>
-                                <h4 class="text-xl font-bold mb-2">Asset Management</h4>
-                                <p class="text-surface-variant/60 text-sm">Optimizing the lifecycle and performance of premium real estate assets globally.</p>
+                                <h4 class="text-xl font-bold mb-2">Portfolio Management</h4>
+                                <p class="text-surface-variant/60 text-sm">Offering end-to-end oversight of your real estate assets to ensure long-term growth and hassle-free ownership.</p>
                             </div>
                         </div>
                     </div>
@@ -343,83 +245,36 @@
             </div>
         </section>
 
-        <!-- Timeline Section -->
-        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32 md:mb-48">
-            <div class="text-center mb-16 md:mb-24">
-                <span class="label-text text-sm uppercase tracking-[0.4em] text-primary mb-4 block">Our Journey</span>
-                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter leading-tight">A Legacy in the Making</h2>
-            </div>
-
-            <div
-                class="relative space-y-16 md:space-y-24 before:content-[''] before:absolute before:left-1/2 before:top-0 before:bottom-0 before:w-px before:bg-outline-variant/30 hidden md:block">
-                <!-- 2004 -->
-                <div class="flex items-center justify-between group">
-                    <div class="w-5/12 text-right pr-16">
-                        <span
-                            class="text-6xl font-bold text-primary/20 group-hover:text-primary transition-colors">2004</span>
-                        <h4 class="text-xl font-bold mt-2">The Foundation</h4>
-                        <p class="text-secondary mt-2 text-sm">Established as a small-scale architectural consultancy in
-                            Zurich.</p>
-                    </div>
-                    <div class="z-10 bg-primary w-4 h-4 ring-8 ring-background"></div>
-                    <div class="w-5/12"></div>
-                </div>
-                <!-- 2012 -->
-                <div class="flex items-center justify-between group">
-                    <div class="w-5/12"></div>
-                    <div class="z-10 bg-primary w-4 h-4 ring-8 ring-background"></div>
-                    <div class="w-5/12 text-left pl-16">
-                        <span
-                            class="text-6xl font-bold text-primary/20 group-hover:text-primary transition-colors">2012</span>
-                        <h4 class="text-xl font-bold mt-2">Editorial Expansion</h4>
-                        <p class="text-secondary mt-2 text-sm">Launch of 'The Gilded Monograph', a quarterly design
-                            journal.</p>
-                    </div>
-                </div>
-                <!-- 2024 -->
-                <div class="flex items-center justify-between group">
-                    <div class="w-5/12 text-right pr-16">
-                        <span
-                            class="text-6xl font-bold text-primary/20 group-hover:text-primary transition-colors">2024</span>
-                        <h4 class="text-xl font-bold mt-2">Digital Modernity</h4>
-                        <p class="text-secondary mt-2 text-sm">Transitioning to a global digital editorial platform
-                            while maintaining high-craft standards.</p>
-                    </div>
-                    <div class="z-10 bg-primary w-4 h-4 ring-8 ring-background"></div>
-                    <div class="w-5/12"></div>
-                </div>
-            </div>
-
-            <!-- Mobile Timeline -->
-            <div class="md:hidden space-y-12">
-                <div class="border-l-2 border-primary pl-6 py-2">
-                    <span class="text-4xl font-bold text-primary">2004</span>
-                    <h4 class="text-xl font-bold mt-2">The Foundation</h4>
-                    <p class="text-secondary mt-2 text-sm">Established as a small-scale architectural consultancy in
-                        Zurich.</p>
-                </div>
-                <div class="border-l-2 border-primary pl-6 py-2">
-                    <span class="text-4xl font-bold text-primary">2012</span>
-                    <h4 class="text-xl font-bold mt-2">Editorial Expansion</h4>
-                    <p class="text-secondary mt-2 text-sm">Launch of 'The Gilded Monograph', a quarterly design journal.
-                    </p>
-                </div>
-                <div class="border-l-2 border-primary pl-6 py-2">
-                    <span class="text-4xl font-bold text-primary">2024</span>
-                    <h4 class="text-xl font-bold mt-2">Digital Modernity</h4>
-                    <p class="text-secondary mt-2 text-sm">Transitioning to a global digital editorial platform.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statement Block -->
+        <!-- Why Choose Us Section -->
         <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32">
-            <div class="bg-surface-container-low p-12 md:p-24 text-center">
-                <p
-                    class="text-2xl md:text-4xl lg:text-5xl font-serif italic text-on-surface leading-tight max-w-4xl mx-auto">
-                    "Space is the silent protagonist of our lives. We simply give it a voice of gold."
-                </p>
-                <div class="mt-12 w-24 h-1 bg-primary mx-auto"></div>
+            <div class="bg-surface-container-low p-12 md:p-24">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="label-text text-sm uppercase tracking-[0.4em] text-primary mb-4 block">Excellence Guaranteed</span>
+                        <h2 class="text-4xl md:text-5xl font-headline font-bold mb-8">Why Choose Us?</h2>
+                        <p class="text-lg text-secondary leading-relaxed font-serif italic">
+                            "Vantage Realtors integrates comprehensive market analytics with a personalized touch. Specializing in Noida’s residential and commercial hubs, we simplify the complexities of property acquisition and management, delivering excellence at every stage of your investment journey."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="p-8 border border-primary/10 bg-white">
+                            <h4 class="text-3xl font-bold text-primary mb-2">Transparent</h4>
+                            <p class="text-secondary text-xs uppercase tracking-widest">Operation Mode</p>
+                        </div>
+                        <div class="p-8 border border-primary/10 bg-white">
+                            <h4 class="text-3xl font-bold text-primary mb-2">Professional</h4>
+                            <p class="text-secondary text-xs uppercase tracking-widest">Advisory Standard</p>
+                        </div>
+                        <div class="p-8 border border-primary/10 bg-white shadow-xl translate-y-4">
+                            <h4 class="text-3xl font-bold text-primary mb-2">Results</h4>
+                            <p class="text-secondary text-xs uppercase tracking-widest">Oriented Approach</p>
+                        </div>
+                        <div class="p-8 border border-primary/10 bg-white shadow-xl translate-y-4">
+                            <h4 class="text-3xl font-bold text-primary mb-2">Noida</h4>
+                            <p class="text-secondary text-xs uppercase tracking-widest">Hub Specialist</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -431,23 +286,30 @@
                 <!-- Col 1: Brand -->
                 <div class="space-y-8">
                     <a href="home.html" class="inline-block">
-                        <img src="Untitled design (14).png" alt="Vantage Logo" class="h-16 w-auto object-contain brightness-0 invert" />
+                        <img src="Untitled design (14).png" alt="Vantage Logo"
+                            class="h-16 w-auto object-contain brightness-0 invert" />
                     </a>
                     <p class="text-[#5f5e5e] text-sm leading-relaxed max-w-xs font-serif italic">
                         "Synthesizing architectural integrity with financial precision since 2004."
                     </p>
-                    <p class="font-serif text-[10px] uppercase tracking-widest text-[#5f5e5e]/60">© 2024 Vantage Real Estate. <br/>An Architectural Study.</p>
+                    <p class="font-serif text-[10px] uppercase tracking-widest text-[#5f5e5e]/60">© 2024 Vantage Real
+                        Estate. <br />An Architectural Study.</p>
                 </div>
 
                 <!-- Col 2: Directory -->
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Directory</h5>
                     <nav class="flex flex-col gap-4 font-serif text-sm tracking-widest">
-                        <a href="home.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Home</a>
-                        <a href="about.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">About</a>
-                        <a href="services.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Services</a>
-                        <a href="careers.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Careers</a>
-                        <a href="contact.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Contact</a>
+                        <a href="home.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Home</a>
+                        <a href="about.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">About</a>
+                        <a href="services.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Services</a>
+                        <a href="careers.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Careers</a>
+                        <a href="contact.html"
+                            class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Contact</a>
                     </nav>
                 </div>
 
@@ -455,9 +317,11 @@
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Concierge</h5>
                     <div class="flex flex-col gap-6 text-[#5f5e5e] font-serif text-sm italic">
-                        <a href="mailto:sales@vantagerealtors.in" class="hover:text-white transition-colors">sales@vantagerealtors.in</a>
+                        <a href="mailto:sales@vantagerealtors.in"
+                            class="hover:text-white transition-colors">sales@vantagerealtors.in</a>
                         <a href="tel:+917982614992" class="hover:text-white transition-colors">+91 79826 14992</a>
-                        <p class="leading-relaxed">924, Tower B, Bhutani Alphathum,<br/>Sector 90, Noida (UP) 201305</p>
+                        <p class="leading-relaxed">924, Tower B, Bhutani Alphathum,<br />Sector 90, Noida (UP) 201305
+                        </p>
                     </div>
                 </div>
 
@@ -465,19 +329,24 @@
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Social Monograph</h5>
                     <div class="flex gap-6">
-                        <a href="https://www.instagram.com/vantagerealtors.in" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://www.instagram.com/vantagerealtors.in"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/113372931/" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://www.linkedin.com/company/113372931/"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=61575448566057" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://www.facebook.com/profile.php?id=61575448566057"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="#"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a href="https://wa.me/917982614992" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                        <a href="https://wa.me/917982614992"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -485,6 +354,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('.material-symbols-outlined');
+
+            if (btn && menu && icon) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('flex');
+                    if (menu.classList.contains('hidden')) {
+                        icon.textContent = 'menu';
+                        document.body.style.overflow = 'auto';
+                    } else {
+                        icon.textContent = 'close';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
