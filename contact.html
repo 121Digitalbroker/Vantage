@@ -115,9 +115,15 @@
                 <div class="mb-16">
                     <h2 class="serif-display text-3xl font-bold mb-4">Institutional Inquiry Form</h2>
                     <p class="text-black/50 text-sm italic">Direct access to the managing partners.</p>
+                    <!-- Success Message -->
+                    <script>
+                        if (window.location.search.includes('success=true')) {
+                            document.write('<div class="mt-6 p-4 bg-green-50 border border-green-200 text-green-700 text-sm font-serif italic">Your engagement brief has been received. A partner will contact you shortly.</div>');
+                        }
+                    </script>
                 </div>
 
-                <form class="space-y-12" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form class="space-y-12" name="contact" method="POST" action="/contact.html?success=true" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contact" />
                     <div class="hidden">
                         <label>Don't fill this out if you're human: <input name="bot-field" /></label>

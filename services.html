@@ -588,7 +588,15 @@
                             </div>
                         </div>
 
-                        <form class="bg-surface p-12 shadow-2xl text-on-surface" name="services" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <div class="mb-8">
+                             <!-- Success Message -->
+                            <script>
+                                if (window.location.search.includes('success=true')) {
+                                    document.write('<div class="mb-6 p-4 bg-white/10 border border-white/20 text-white text-sm font-serif italic">Inquiry submitted successfully.</div>');
+                                }
+                            </script>
+                        </div>
+                        <form class="bg-surface p-12 shadow-2xl text-on-surface" name="services" method="POST" action="/services.html?success=true" data-netlify="true" data-netlify-honeypot="bot-field">
                             <input type="hidden" name="form-name" value="services" />
                             <div class="hidden">
                                 <label>Don't fill this out if you're human: <input name="bot-field" /></label>
