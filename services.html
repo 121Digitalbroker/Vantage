@@ -20,7 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -578,7 +578,7 @@
                                 <div class="flex items-center gap-6">
                                     <span class="material-symbols-outlined text-primary text-3xl">alternate_email</span>
                                     <span
-                                        class="inter-label text-sm uppercase tracking-widest font-bold">advisory@vantage.estate</span>
+                                        class="inter-label text-sm uppercase tracking-widest font-bold">sales@vantagerealtors.in</span>
                                 </div>
                                 <div class="flex items-center gap-6">
                                     <span class="material-symbols-outlined text-primary text-3xl">call</span>
@@ -588,14 +588,18 @@
                             </div>
                         </div>
 
-                        <form class="bg-surface p-12 shadow-2xl text-on-surface">
+                        <form class="bg-surface p-12 shadow-2xl text-on-surface" name="services" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="services" />
+                            <div class="hidden">
+                                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                            </div>
                             <div class="space-y-10">
                                 <div
                                     class="group border-b border-outline-variant py-4 focus-within:border-primary transition-colors">
                                     <label
                                         class="inter-label text-[10px] uppercase tracking-widest text-secondary block mb-1">Full
                                         Name</label>
-                                    <input type="text" placeholder="ALEXANDER VOGUE"
+                                    <input type="text" name="name" placeholder="ALEXANDER VOGUE"
                                         class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl placeholder:text-outline-variant/30"
                                         required>
                                 </div>
@@ -604,7 +608,7 @@
                                     <label
                                         class="inter-label text-[10px] uppercase tracking-widest text-secondary block mb-1">Electronic
                                         Mail</label>
-                                    <input type="email" placeholder="vogue@estate.com"
+                                    <input type="email" name="email" placeholder="vogue@estate.com"
                                         class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl placeholder:text-outline-variant/30"
                                         required>
                                 </div>
@@ -613,7 +617,7 @@
                                     <label
                                         class="inter-label text-[10px] uppercase tracking-widest text-secondary block mb-1">Inquiry
                                         Pillar</label>
-                                    <select
+                                    <select name="pillar"
                                         class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl uppercase tracking-tighter">
                                         <option>Strategic Broking</option>
                                         <option>Advisory Management</option>
@@ -662,7 +666,7 @@
                 <div>
                     <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Concierge</h5>
                     <div class="flex flex-col gap-6 text-[#5f5e5e] font-serif text-sm italic">
-                        <a href="mailto:concierge@vantagerealtors.in" class="hover:text-white transition-colors">concierge@vantagerealtors.in</a>
+                        <a href="mailto:sales@vantagerealtors.in" class="hover:text-white transition-colors">sales@vantagerealtors.in</a>
                         <a href="tel:+919999999999" class="hover:text-white transition-colors">+91 99999 99999</a>
                         <p class="leading-relaxed">Level 12, Corporate Greens,<br/>DLF Phase 5, Gurgaon, HR</p>
                     </div>
