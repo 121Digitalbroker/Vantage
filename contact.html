@@ -9,6 +9,7 @@
     <title>Contact | Vantage Broking Advisory Management</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -68,9 +69,11 @@
                 <a class="hover:text-primary transition-colors text-black/60" href="careers.html">Careers</a>
                 <a class="hover:text-primary transition-colors text-black" href="contact.html">Contact</a>
             </div>
-            <button class="bg-primary text-white px-8 py-3 label-font text-[10px] uppercase tracking-[0.3em] font-black hover:bg-black transition-all">
-                Inquiry
-            </button>
+            <a href="#inquiry">
+                <button class="bg-primary text-white px-8 py-3 label-font text-[10px] uppercase tracking-[0.3em] font-black hover:bg-black transition-all">
+                    Inquiry
+                </button>
+            </a>
         </div>
     </nav>
 
@@ -97,7 +100,7 @@
         </section>
 
         <!-- Section 2: Split Formal Inquiry -->
-        <section class="max-w-screen-2xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-0 border-y border-black/5 bg-white">
+        <section id="inquiry" class="max-w-screen-2xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-0 border-y border-black/5 bg-white">
             <!-- Form Side -->
             <div class="py-24 border-r border-black/5 pr-0 lg:pr-24">
                 <div class="mb-16">
@@ -148,9 +151,9 @@
                         Our physical location is as curated as our portfolio. Access by formal appointment only.
                     </p>
                     <div class="space-y-2 label-font text-[11px] uppercase tracking-[0.2em]">
-                        <p class="text-[#1b1c19]">Floor 12, Corporate Avenue</p>
-                        <p class="text-[#1b1c19]">London, United Kingdom</p>
-                        <p class="text-black/40">Open 09:00 — 18:00 GMT</p>
+                        <p class="text-[#1b1c19]">Level 12, Corporate Greens</p>
+                        <p class="text-[#1b1c19]">DLF Phase 5, Gurgaon, HR</p>
+                        <p class="text-black/40">Open 10:00 — 19:00 IST</p>
                     </div>
                 </div>
 
@@ -158,11 +161,11 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-12 border-t border-black/5">
                     <div>
                         <p class="label-font text-[10px] uppercase tracking-widest text-primary mb-4 font-bold">Direct Line</p>
-                        <p class="serif-display text-xl">+44 (0) 20 7123 4567</p>
+                        <p class="serif-display text-xl">+91 99999 99999</p>
                     </div>
                     <div>
                         <p class="label-font text-[10px] uppercase tracking-widest text-primary mb-4 font-bold">Secure Email</p>
-                        <p class="serif-display text-xl">partner@vantage.broking</p>
+                        <p class="serif-display text-xl">concierge@vantagerealtors.in</p>
                     </div>
                 </div>
 
@@ -181,17 +184,63 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black py-24">
-        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-12">
-            <div>
-                <img src="Untitled design (14).png" alt="Vantage" class="h-10 w-auto invert mb-8" />
-                <p class="label-font text-[10px] uppercase tracking-[0.3em] text-white/30">© 2024 Vantage Broking Advisory Management. Precise Integrity.</p>
-            </div>
-            <div class="flex gap-12 label-font text-[10px] uppercase tracking-[0.4em] text-white/50">
-                <a href="home.html" class="hover:text-primary transition-colors">Home</a>
-                <a href="about.html" class="hover:text-primary transition-colors">About</a>
-                <a href="services.html" class="hover:text-primary transition-colors">Services</a>
-                <a href="contact.html" class="hover:text-white transition-colors text-white">Contact</a>
+    <footer class="bg-[#1b1c19] dark:bg-[#000000] w-full py-20 border-t border-white/5">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-12 mb-20">
+                <!-- Col 1: Brand -->
+                <div class="space-y-8">
+                    <a href="home.html" class="inline-block">
+                        <img src="Untitled design (14).png" alt="Vantage Logo" class="h-16 w-auto object-contain brightness-0 invert" />
+                    </a>
+                    <p class="text-[#5f5e5e] text-sm leading-relaxed max-w-xs font-serif italic">
+                        "Synthesizing architectural integrity with financial precision since 2004."
+                    </p>
+                    <p class="font-serif text-[10px] uppercase tracking-widest text-[#5f5e5e]/60">© 2024 Vantage Real Estate. <br/>An Architectural Study.</p>
+                </div>
+
+                <!-- Col 2: Directory -->
+                <div>
+                    <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Directory</h5>
+                    <nav class="flex flex-col gap-4 font-serif text-sm tracking-widest">
+                        <a href="home.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Home</a>
+                        <a href="about.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">About</a>
+                        <a href="services.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Services</a>
+                        <a href="careers.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Careers</a>
+                        <a href="contact.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Concierge -->
+                <div>
+                    <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Concierge</h5>
+                    <div class="flex flex-col gap-6 text-[#5f5e5e] font-serif text-sm italic">
+                        <a href="mailto:concierge@vantagerealtors.in" class="hover:text-white transition-colors">concierge@vantagerealtors.in</a>
+                        <a href="tel:+919999999999" class="hover:text-white transition-colors">+91 99999 99999</a>
+                        <p class="leading-relaxed">Level 12, Corporate Greens,<br/>DLF Phase 5, Gurgaon, HR</p>
+                    </div>
+                </div>
+
+                <!-- Col 4: Social Monograph -->
+                <div>
+                    <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Social Monograph</h5>
+                    <div class="flex gap-6">
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/919999999999" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

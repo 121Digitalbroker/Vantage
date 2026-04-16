@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -131,10 +132,12 @@
             <div class="flex items-center gap-4 md:gap-6">
                 <span
                     class="hidden sm:block material-symbols-outlined text-[#745b00] cursor-pointer text-xl">search</span>
-                <button
-                    class="bg-primary text-on-primary px-6 md:px-8 py-2 md:py-2.5 font-serif text-sm tracking-wide hover:opacity-80 transition-all duration-200 active:scale-95">
-                    Inquiry
-                </button>
+                <a href="contact.html">
+                    <button
+                        class="bg-primary text-on-primary px-6 md:px-8 py-2 md:py-2.5 font-serif text-sm tracking-wide hover:opacity-80 transition-all duration-200 active:scale-95">
+                        Inquiry
+                    </button>
+                </a>
                 <button class="md:hidden text-on-surface">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
@@ -164,7 +167,7 @@
                         <strong>Management</strong>.
                     </p>
                     <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
-                        <a href="#inquiry"
+                        <a href="contact.html"
                             class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 serif-display text-lg hover:opacity-90 transition-all flex items-center justify-center gap-3">
                             Initiate Inquiry
                             <span class="material-symbols-outlined">arrow_right_alt</span>
@@ -235,12 +238,6 @@
                             <span class="inter-label text-[10px] uppercase tracking-[0.4em] text-[#745b00] mb-4 block font-bold">Section 03</span>
                             <h3 class="serif-display text-3xl font-bold text-white mb-4">Management</h3>
                             <p class="serif-display text-white/80 text-lg italic leading-tight group-hover:text-[#745b00] transition-colors">
-                                "Lifecycle Precision for Portfolios."
-                            </p>
-                        </div>
-                    </div>                            <h3 class="serif-display text-3xl font-bold text-on-primary mb-4">Management</h3>
-                            <p
-                                class="serif-display text-on-primary/70 text-lg italic leading-tight group-hover:text-primary transition-colors">
                                 "Lifecycle Precision for Portfolios."
                             </p>
                         </div>
@@ -504,7 +501,7 @@
                             <p class="text-secondary mb-12 italic serif-display text-lg leading-relaxed">"We don't just
                                 find your next property; we manage the trajectory of your investment from the first
                                 broking signature."</p>
-                            <a href="#inquiry"
+                            <a href="contact.html"
                                 class="inline-flex items-center gap-4 text-primary font-bold inter-label text-sm uppercase tracking-widest border-b border-primary/20 pb-2 hover:border-primary transition-all">
                                 Request Private Consultation <span class="material-symbols-outlined">north_east</span>
                             </a>
@@ -626,32 +623,63 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#1b1c19] w-full py-16 border-t-0">
-        <div
-            class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 w-full gap-12 max-w-screen-2xl mx-auto text-center md:text-left">
-            <div class="flex flex-col gap-4">
-                <a href="home.html" class="flex items-center group no-underline">
-                    <img src="Untitled design (14).png" alt="Vantage Logo"
-                        class="h-16 w-auto object-contain brightness-0 invert" />
-                </a>
-                <p class="font-serif text-xs md:text-sm uppercase tracking-widest text-[#5f5e5e]">© 2024 Vantage Real
-                    Estate. An Architectural Study.</p>
-            </div>
-            <div
-                class="flex flex-wrap justify-center gap-6 md:gap-10 font-serif text-xs md:text-sm uppercase tracking-widest">
-                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300" href="home.html">Home</a>
-                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300" href="about.html">About
-                    Us</a>
-                <a class="text-[#fbf9f4] transition-colors duration-300 underline underline-offset-8"
-                    href="services.html">Services</a>
-                <a class="text-[#5f5e5e] hover:text-[#fbf9f4] transition-colors duration-300"
-                    href="careers.html">Careers</a>
-            </div>
-            <div class="flex gap-6">
-                <span
-                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">language</span>
-                <span
-                    class="text-[#C5A022] material-symbols-outlined cursor-pointer hover:opacity-70 transition-all">share</span>
+    <footer class="bg-[#1b1c19] dark:bg-[#000000] w-full py-20 border-t border-white/5">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-12 mb-20">
+                <!-- Col 1: Brand -->
+                <div class="space-y-8">
+                    <a href="home.html" class="inline-block">
+                        <img src="Untitled design (14).png" alt="Vantage Logo" class="h-16 w-auto object-contain brightness-0 invert" />
+                    </a>
+                    <p class="text-[#5f5e5e] text-sm leading-relaxed max-w-xs font-serif italic">
+                        "Synthesizing architectural integrity with financial precision since 2004."
+                    </p>
+                    <p class="font-serif text-[10px] uppercase tracking-widest text-[#5f5e5e]/60">© 2024 Vantage Real Estate. <br/>An Architectural Study.</p>
+                </div>
+
+                <!-- Col 2: Directory -->
+                <div>
+                    <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Directory</h5>
+                    <nav class="flex flex-col gap-4 font-serif text-sm tracking-widest">
+                        <a href="home.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Home</a>
+                        <a href="about.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">About</a>
+                        <a href="services.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Services</a>
+                        <a href="careers.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Careers</a>
+                        <a href="contact.html" class="text-[#5f5e5e] hover:text-[#d3ad70] transition-colors uppercase">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Concierge -->
+                <div>
+                    <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Concierge</h5>
+                    <div class="flex flex-col gap-6 text-[#5f5e5e] font-serif text-sm italic">
+                        <a href="mailto:concierge@vantagerealtors.in" class="hover:text-white transition-colors">concierge@vantagerealtors.in</a>
+                        <a href="tel:+919999999999" class="hover:text-white transition-colors">+91 99999 99999</a>
+                        <p class="leading-relaxed">Level 12, Corporate Greens,<br/>DLF Phase 5, Gurgaon, HR</p>
+                    </div>
+                </div>
+
+                <!-- Col 4: Social Monograph -->
+                <div>
+                    <h5 class="text-white text-xs uppercase tracking-[0.3em] font-bold mb-8">Social Monograph</h5>
+                    <div class="flex gap-6">
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/919999999999" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
