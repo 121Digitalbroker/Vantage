@@ -1,4 +1,4 @@
-<!-- Services - Vantage Gold Label -->
+<!-- Services - DigitalBroker.in -->
 <!DOCTYPE html>
 
 <html class="light" lang="en">
@@ -16,9 +16,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="Untitled design (14).png" />
-    <title>Advisory Services | Capital Management & Property Consulting | Vantage Realtors</title>
+    <title>Consultancy Services | Capital Management & Property Consulting | DigitalBroker.in</title>
     <meta name="description"
-        content="Explore our institutional real estate services. From capital management to residential and commercial property consultancy, Vantage Realtors delivers high-yield results.">
+        content="Explore our institutional real estate services. From capital management to residential and commercial property consultancy, DigitalBroker.in delivers high-yield results.">
     <meta name="keywords"
         content="Real Estate Services Noida, Capital Management Noida, Property Consultancy, Commercial Real Estate Noida">
     <link
@@ -132,13 +132,34 @@
         class="fixed top-0 w-full z-50 h-20 bg-[#fbf9f4]/80 backdrop-blur-xl shadow-[0_40px_40px_rgba(116,91,0,0.04)] transition-colors duration-500">
         <div class="flex justify-between items-center px-6 md:px-12 h-full w-full max-w-screen-2xl mx-auto">
             <a href="home.html" class="flex items-center group no-underline">
-                <img src="Untitled design (14).png" alt="Vantage Logo" class="h-14 w-auto object-contain" />
+                <img src="Untitled design (14).png" alt="DigitalBroker Logo" class="h-14 w-auto object-contain" />
             </a>
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
-                <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="about.html">About
-                    Us</a>
+
+                <!-- About Dropdown -->
+                <div class="relative group">
+                    <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300 flex items-center gap-1 cursor-pointer"
+                        href="about.html">
+                        About Us
+                        <span class="material-symbols-outlined text-[14px]">expand_more</span>
+                    </a>
+                    <div
+                        class="absolute left-0 pt-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                        <div
+                            class="bg-white/95 backdrop-blur-xl border border-primary/10 shadow-xl p-2 rounded-xl flex flex-col gap-1 text-left">
+                            <a href="about.html"
+                                class="px-4 py-2 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-base font-medium">About
+                                Us</a>
+                            <a href="about.html#leadership"
+                                class="px-4 py-2 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-base font-medium">Leader</a>
+                            <a href="about.html#team"
+                                class="px-4 py-2 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-base font-medium">Team</a>
+                        </div>
+                    </div>
+                </div>
+
                 <a class="text-[#1b1c19] transition-opacity duration-300" href="services.html">Services</a>
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
                     href="careers.html">Careers</a>
@@ -162,10 +183,15 @@
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-24 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-screen overflow-y-auto pb-10">
+    <div id="mobile-menu"
+        class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-24 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-full overflow-y-auto pb-10">
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="home.html">Home</a>
-        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About</a>
-        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="services.html">Services</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About Us</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4 pl-4 text-xl"
+            href="about.html#leadership">Leader</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4 pl-4 text-xl"
+            href="about.html#team">Team</a>
+        <a class="text-[#1b1c19] border-b border-black/10 pb-4" href="services.html">Services</a>
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="careers.html">Careers</a>
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="contact.html">Contact</a>
     </div>
@@ -178,18 +204,18 @@
                     <div class="mb-6 inline-flex items-center gap-3">
                         <span class="w-12 h-[1px] bg-primary"></span>
                         <span class="inter-label text-xs uppercase tracking-[0.3em] text-primary font-semibold">Bespoke
-                            Advisory Firm</span>
+                            Consultancy Firm</span>
                     </div>
                     <h1
                         class="serif-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tighter text-on-surface mb-8 text-balance">
-                        Vantage Broking <br />
-                        <span class="italic font-normal text-primary">Advisory</span> <br />
-                        Management
+                        DigitalBroker Broking <br />
+                        <span class="italic font-normal text-primary">Consultancy</span> <br />
+                        Portfolio Management
                     </h1>
                     <p class="serif-display text-xl text-secondary max-w-xl leading-relaxed mb-10">
                         A specialized division dedicated to the three pillars of premium real estate: Strategic
-                        <strong>Broking</strong>, Institutional <strong>Advisory</strong>, and Lifecycle
-                        <strong>Management</strong>.
+                        <strong>Broking</strong>, Institutional <strong>Consultancy</strong>, and Lifecycle
+                        <strong>Portfolio Management</strong>.
                     </p>
                     <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
                         <a href="contact.html"
@@ -206,7 +232,7 @@
                 <div class="relative hidden lg:block h-[800px]">
                     <div class="absolute inset-0 bg-surface-container-low -translate-x-12 translate-y-12"></div>
                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
-                        alt="Strategic Advisory"
+                        alt="Strategic Consultancy"
                         class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl z-10" />
                 </div>
             </div>
@@ -218,7 +244,7 @@
                 <div class="text-center mb-20">
                     <span class="inter-label text-xs uppercase tracking-[0.4em] text-primary mb-4 block">Core
                         Competencies</span>
-                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight">The Vantage <span
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight">The DigitalBroker <span
                             class="italic font-normal">Triad</span></h2>
                 </div>
 
@@ -242,9 +268,9 @@
                         </div>
                     </div>
 
-                    <!-- Column 2: Advisory -->
+                    <!-- Column 2: Consultancy -->
                     <div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
-                        <img src="pexels-tiger-lily-7108756.jpg" alt="Strategic Advisory"
+                        <img src="pexels-tiger-lily-7108756.jpg" alt="Strategic Consultancy"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/30 to-transparent">
@@ -253,7 +279,7 @@
                             <span
                                 class="inter-label text-[10px] uppercase tracking-[0.4em] text-[#745b00] mb-4 block font-bold">Section
                                 02</span>
-                            <h3 class="serif-display text-3xl font-bold text-white mb-4">Advisory</h3>
+                            <h3 class="serif-display text-3xl font-bold text-white mb-4">Consultancy</h3>
                             <p
                                 class="serif-display text-white/80 text-lg italic leading-tight group-hover:text-[#745b00] transition-colors">
                                 "Intelligence That Redefines Market Entry."
@@ -272,7 +298,7 @@
                             <span
                                 class="inter-label text-[10px] uppercase tracking-[0.4em] text-[#745b00] mb-4 block font-bold">Section
                                 03</span>
-                            <h3 class="serif-display text-3xl font-bold text-white mb-4">Management</h3>
+                            <h3 class="serif-display text-3xl font-bold text-white mb-4">Portfolio Management</h3>
                             <p
                                 class="serif-display text-white/80 text-lg italic leading-tight group-hover:text-[#745b00] transition-colors">
                                 "Lifecycle Precision for Portfolios."
@@ -283,13 +309,13 @@
             </div>
         </section>
 
-        <!-- 3. Our Advisory Approach -->
+        <!-- 3. Our Consultancy Approach -->
         <section class="py-24 md:py-32 bg-surface">
             <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
                 <div class="grid lg:grid-cols-2 gap-24 items-center">
                     <div class="order-2 lg:order-1">
                         <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
-                            alt="Advisory Approach" class="w-full h-[600px] object-cover shadow-2xl grayscale" />
+                            alt="Consultancy Approach" class="w-full h-[600px] object-cover shadow-2xl grayscale" />
                     </div>
                     <div class="order-1 lg:order-2">
                         <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-10">The Intelligence
@@ -381,7 +407,8 @@
                     </div>
                     <div class="bg-surface p-12 border-t-4 border-primary hover:shadow-2xl transition-all h-full">
                         <span class="material-symbols-outlined text-primary text-4xl mb-8">handshake</span>
-                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Advisory Lifecycle
+                        <h4 class="serif-display text-xl font-bold mb-4 uppercase tracking-tighter">Consultancy
+                            Lifecycle
                         </h4>
                         <p class="text-secondary text-sm leading-relaxed">Continuous portfolio review and exit strategy
                             advisory to maintain the liquidity and growth of your investments.</p>
@@ -450,7 +477,7 @@
                 <div class="mb-20 text-center">
                     <span class="inter-label text-xs uppercase tracking-[0.4em] text-on-primary/70 mb-4 block">The
                         Lifecycle</span>
-                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight">Management <span
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight">Portfolio Management <span
                             class="italic font-normal">Symphony</span></h2>
                 </div>
                 <div
@@ -534,7 +561,7 @@
                     <div class="bg-surface-container-high p-12 md:p-24 shadow-2xl relative overflow-hidden group">
                         <div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
                         <div class="relative z-10">
-                            <h3 class="serif-display text-3xl font-bold mb-8">Management Oversight</h3>
+                            <h3 class="serif-display text-3xl font-bold mb-8">Portfolio Management Oversight</h3>
                             <p class="text-secondary mb-12 italic serif-display text-lg leading-relaxed">"We don't just
                                 find your next property; we manage the trajectory of your investment from the first
                                 broking signature."</p>
@@ -552,7 +579,7 @@
         <section class="py-24 bg-surface-container-lowest border-y border-outline-variant/10">
             <div class="max-w-screen-2xl mx-auto px-6 md:px-12 text-center">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-12">Advisory <span
+                    <h2 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-12">Consultancy <span
                             class="text-primary italic">Intelligence</span> Metrics</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                         <div class="p-10 border border-outline-variant/20 hover:border-primary/30 transition-all">
@@ -577,7 +604,7 @@
                                 Managed</span>
                             <div class="serif-display text-5xl font-bold text-primary mb-4">$8.4B</div>
                             <p class="text-sm text-secondary serif-display">Cumulative Transaction Value Under Strategic
-                                Advisory</p>
+                                Consultancy</p>
                         </div>
                     </div>
                 </div>
@@ -596,7 +623,8 @@
                                 Engagement</span>
                             <h2
                                 class="serif-display text-4xl md:text-7xl font-bold tracking-tighter mb-10 leading-[1.1]">
-                                Elite Broking & <br /><span class="text-primary italic">Advisory</span> Concierge</h2>
+                                Elite Broking & <br /><span class="text-primary italic">Consultancy</span> Concierge
+                            </h2>
                             <p class="text-on-primary/60 text-lg md:text-xl serif-display leading-relaxed mb-12 max-lg">
                                 Contact a managing partner to discuss your acquisition objectives and secure priority
                                 access to upcoming pre-launch inventory.</p>
@@ -656,7 +684,7 @@
                                     <select name="pillar"
                                         class="w-full bg-transparent border-0 p-0 focus:ring-0 serif-display text-xl uppercase tracking-tighter">
                                         <option>Strategic Broking</option>
-                                        <option>Advisory Management</option>
+                                        <option>Consultancy Management</option>
                                         <option>Portfolio Concierge</option>
                                     </select>
                                 </div>
@@ -678,7 +706,7 @@
                 <!-- Col 1: Brand -->
                 <div class="space-y-8">
                     <a href="home.html" class="inline-block">
-                        <img src="Untitled design (14).png" alt="Vantage Logo"
+                        <img src="Untitled design (14).png" alt="DigitalBroker Logo"
                             class="h-16 w-auto object-contain brightness-0 invert" />
                     </a>
                     <p class="text-[#5f5e5e] text-sm leading-relaxed max-w-xs font-serif italic">
@@ -711,7 +739,7 @@
                     <div class="flex flex-col gap-6 text-[#5f5e5e] font-serif text-sm italic">
                         <a href="mailto:sales@vantagerealtors.in"
                             class="hover:text-white transition-colors">sales@vantagerealtors.in</a>
-                        <a href="tel:+917982614992" class="hover:text-white transition-colors">+91 79826 14992</a>
+                        <a href="tel:+919217976677" class="hover:text-white transition-colors">+91 92179 76677</a>
                         <p class="leading-relaxed">924, Tower B, Bhutani Alphathum,<br />Sector 90, Noida (UP) 201305
                         </p>
                     </div>
@@ -733,11 +761,7 @@
                             class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="#"
-                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="https://wa.me/917982614992"
+                        <a href="https://wa.me/919217976677"
                             class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>

@@ -1,4 +1,4 @@
-<!-- About Us - Vantage Gold Label -->
+<!-- About Us - DigitalBroker.in -->
 <!DOCTYPE html>
 
 <html class="light" lang="en">
@@ -16,11 +16,11 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="Untitled design (14).png" />
-    <title>Our Heritage | Vantage Realtors - The Standard in Institutional Advisory</title>
+    <title>Our Heritage | DigitalBroker.in - The Standard in Tech-Enabled Platform</title>
     <meta name="description"
-        content="Discover the philosophy behind Vantage Realtors. Headquartered in Noida, we are redefining real estate advisory through institutional precision and capital management expertise.">
+        content="Discover the philosophy behind DigitalBroker.in. Headquartered in Noida, we are redefining real estate advisory through institutional precision and capital management expertise.">
     <meta name="keywords"
-        content="Vantage Realtors Heritage, About Vantage Noida, Real Estate Consultancy Noida, Institutional Real Estate Advisory">
+        content="DigitalBroker.in Heritage, About DigitalBroker Noida, Real Estate Consultancy Noida, Institutional Real Estate Consultancy">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -103,8 +103,37 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
         body {
             font-family: 'Noto Serif', serif;
+        }
+
+        .reveal-image {
+            opacity: 0;
+            transform: translateY(40px) scale(0.9) rotate3d(1, 0, 0, 10deg);
+            transition: all 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+            filter: blur(10px);
+        }
+
+        .reveal-image.active {
+            opacity: 1;
+            transform: translateY(0) scale(1) rotate3d(1, 0, 0, 0deg);
+            filter: blur(0);
         }
 
         .label-text {
@@ -119,12 +148,33 @@
         class="fixed top-0 w-full z-50 h-20 bg-[#fbf9f4]/80 backdrop-blur-xl transition-colors duration-500 shadow-[0_40px_40px_rgba(116,91,0,0.04)]">
         <div class="flex justify-between items-center px-6 md:px-12 h-full w-full max-w-screen-2xl mx-auto">
             <a href="home.html" class="flex items-center group no-underline">
-                <img src="Untitled design (14).png" alt="Vantage Logo" class="h-14 w-auto object-contain" />
+                <img src="Untitled design (14).png" alt="DigitalBroker Logo" class="h-14 w-auto object-contain" />
             </a>
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300" href="home.html">Home</a>
-                <a class="text-[#1b1c19] transition-opacity duration-300" href="about.html">About</a>
+
+                <!-- About Dropdown -->
+                <div class="relative group">
+                    <a class="text-[#1b1c19] transition-opacity duration-300 flex items-center gap-1 cursor-pointer"
+                        href="about.html">
+                        About Us
+                        <span class="material-symbols-outlined text-[14px]">expand_more</span>
+                    </a>
+                    <div
+                        class="absolute left-0 pt-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                        <div
+                            class="bg-white/95 backdrop-blur-xl border border-primary/10 shadow-xl p-2 rounded-xl flex flex-col gap-1">
+                            <a href="about.html"
+                                class="px-4 py-2 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-base font-medium">About
+                                Us</a>
+                            <a href="about.html#leadership"
+                                class="px-4 py-2 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-base font-medium">Leader</a>
+                            <a href="about.html#team"
+                                class="px-4 py-2 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-base font-medium">Team</a>
+                        </div>
+                    </div>
+                </div>
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
                     href="services.html">Services</a>
                 <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
@@ -149,9 +199,14 @@
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-24 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-screen overflow-y-auto pb-10">
+    <div id="mobile-menu"
+        class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-24 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-full overflow-y-auto pb-10">
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="home.html">Home</a>
-        <a class="text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About</a>
+        <a class="text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About Us</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4 pl-4 text-xl"
+            href="about.html#leadership">Leader</a>
+        <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4 pl-4 text-xl"
+            href="about.html#team">Team</a>
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="services.html">Services</a>
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="careers.html">Careers</a>
         <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="contact.html">Contact</a>
@@ -162,7 +217,8 @@
         <section
             class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-20 md:mb-32 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div class="lg:col-span-8">
-                <span class="label-text text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Premier Real Estate Advisory</span>
+                <span class="label-text text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Premier Real Estate
+                    Consultancy</span>
                 <h1
                     class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] text-on-surface mb-8">
                     About Vantage <br class="hidden md:block" />Realtors
@@ -170,7 +226,8 @@
             </div>
             <div class="lg:col-span-4 pb-4">
                 <p class="text-lg text-secondary leading-relaxed max-w-sm">
-                    Redefining the real estate experience by combining deep local expertise with a forward-thinking approach to property investment.
+                    Redefining the real estate experience by combining deep local expertise with a forward-thinking
+                    approach to property investment.
                 </p>
             </div>
         </section>
@@ -185,54 +242,350 @@
         </section>
 
         <!-- Firm Narrative Section -->
-        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32 md:mb-48">
+        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-16 md:mb-20">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <div class="space-y-8">
-                    <p class="text-2xl font-serif italic text-on-surface leading-relaxed">
-                        "Based in the heart of Noida, we serve as a premier destination for individuals and institutional investors seeking high-value opportunities in one of India's most dynamic urban landscapes."
+                    <p class="text-xl md:text-2xl font-serif italic text-on-surface leading-relaxed">
+                        "At Vantage Realtors, we redefine the real estate experience by combining deep local expertise
+                        with a forward-thinking approach to property investment. Based in the heart of Noida, we serve
+                        as a premier destination for individuals and institutional investors seeking high-value
+                        opportunities in one of India’s most dynamic urban landscapes."
                     </p>
                     <p class="text-secondary leading-relaxed">
-                        Our expertise spans across Residential and Commercial sectors, ensuring that whether you are searching for a luxury residence or a high-yield retail space, you receive unparalleled market insights. We pride ourselves on a service model built on three core pillars designed for the sophisticated investor.
+                        Our expertise spans across Residential and Commercial sectors, ensuring that whether you are
+                        searching for a luxury residence or a high-yield retail space, you receive unparalleled market
+                        insights. We pride ourselves on a service model built on three core pillars:
                     </p>
                 </div>
                 <div class="bg-surface-container-low p-12 border-l-4 border-primary">
-                    <h3 class="text-2xl font-bold mb-6">Our Mission</h3>
+                    <h3 class="text-2xl font-bold mb-6">Our Commitment</h3>
                     <p class="text-secondary leading-relaxed">
-                        At Vantage Realtors, we don't just close deals; we build lasting partnerships. We understand that real estate is often your most significant investment, and our mission is to provide the "Vantage" point necessary to make informed, profitable decisions.
+                        At Vantage Realtors, we don't just close deals; we build lasting partnerships. We understand
+                        that real estate is often your most significant investment, and our mission is to provide the
+                        "Vantage" point necessary to make informed, profitable decisions. Discover a transparent,
+                        professional, and results-oriented approach.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Strategy Section -->
+        <section id="leadership"
+            class="leadership-section px-6 md:px-12 max-w-screen-2xl mx-auto mb-4 md:mb-6 scroll-mt-32">
+
+            <!-- Clickable Bar (leadership-toggle) -->
+            <div id="leadership-bar"
+                class="leadership-toggle bg-[#F7F5F1] hover:bg-[#F1EEE8] p-4 md:p-5 flex justify-between items-center cursor-pointer transition-colors duration-300 rounded-[8px] border-none shadow-none group">
+                <div class="flex items-center gap-4">
+                    <span
+                        class="text-[10px] uppercase tracking-[2px] text-[#B89B5E] font-bold hidden md:block">Executive</span>
+                    <!-- Divider Line -->
+                    <div class="hidden md:block w-px h-6 bg-[#B89B5E]/30"></div>
+                    <h2 class="text-[28px] font-medium tracking-tight m-0 text-[#1A1A1A]">Our Leaders</h2>
+                </div>
+                <div class="w-10 h-10 flex items-center justify-center transition-transform duration-500">
+                    <span id="leadership-arrow"
+                        class="material-symbols-outlined text-2xl text-[#1A1A1A] transition-transform duration-300 transform"
+                        style="transform: rotate(180deg);">expand_more</span>
+                </div>
+            </div>
+
+            <!-- Expandable Content Wrapper (Open by default) -->
+            <div id="leadership-content"
+                class="overflow-hidden transition-all duration-[800ms] ease-in-out max-h-[5000px] opacity-100">
+                <div class="leadership-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 pt-8 pb-4">
+                    <!-- Leader 01 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Aditya Vardhan"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/Rohitsir.png" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Rohit Thakur</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Founder & Director</p>
+                            <p class="text-secondary text-sm leading-relaxed font-serif italic m-0">
+                                13+ years of excellence in real estate consultancy, specializing in high-value
+                                commercial portfolios.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Leader 02 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Ananya Sharma"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/Devashish.png" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Devashish Attri</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Founder & Director</p>
+                            <p class="text-secondary text-sm leading-relaxed font-serif italic m-0">
+                                A real estate career built over 14 years and several global cities, fueled by a
+                                relentless drive to keep evolving."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Leader 03 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Vikram Seth"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/Sanjay.png" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Sanjay Chaudhary</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Director (Sales)</p>
+                            <p class="text-secondary text-sm leading-relaxed font-serif italic m-0">
+                                "Driven by passion, defined by results. 10 years of sales and 7 years of real estate
+                                expertise—a consultant by choice, not by chance."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team"
+            class="leadership-section px-6 md:px-12 max-w-screen-2xl mx-auto mb-16 md:mb-20 scroll-mt-32">
+
+            <!-- Clickable Bar (team-toggle) -->
+            <div id="team-bar"
+                class="leadership-toggle bg-[#F7F5F1] hover:bg-[#F1EEE8] p-4 md:p-5 flex justify-between items-center cursor-pointer transition-colors duration-300 rounded-[8px] border-none shadow-none group">
+                <div class="flex items-center gap-4">
+                    <span
+                        class="text-[10px] uppercase tracking-[2px] text-[#B89B5E] font-bold hidden md:block">Team</span>
+                    <!-- Divider Line -->
+                    <div class="hidden md:block w-px h-6 bg-[#B89B5E]/30"></div>
+                    <h2 class="text-[28px] font-medium tracking-tight m-0 text-[#1A1A1A]">Our Team</h2>
+                </div>
+                <div class="w-10 h-10 flex items-center justify-center transition-transform duration-500">
+                    <span id="team-arrow"
+                        class="material-symbols-outlined text-2xl text-[#1A1A1A] transition-transform duration-300 transform">expand_more</span>
+                </div>
+            </div>
+
+            <!-- Expandable Content Wrapper -->
+            <div id="team-content"
+                class="overflow-hidden transition-all duration-[800ms] ease-in-out max-h-0 opacity-0">
+                <div class="leadership-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 pt-8 pb-4">
+                    <!-- Team Member 01 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Rohan Verma"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/WhatsApp Image 2026-04-17 at 15.49.14.jpeg" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Shahan Khan</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Vice President of Sales</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 02 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Priya Singh"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/HR.jpeg" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Atiba Adil</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Chief Human Resources Officer</p>
+                            <p class="text-secondary text-sm leading-relaxed font-serif italic m-0">
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 03 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Karan Malhotra"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/mansi.png" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Mansi Rana</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Digital Marketing Head</p>
+                            <p class="text-secondary text-sm leading-relaxed font-serif italic m-0">
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 04 -->
+                    <div
+                        class="leadership-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group border border-black/5 hover:-translate-y-2">
+                        <div class="aspect-[4/5] bg-surface-container-high overflow-hidden relative">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="New Team Member"
+                                src="/Users/dhruvsolanki/Documents/Codes/VEDANTA_NOIDA/Project 1For THe ProtoTyping /Vantage/divided/Dhruv.png" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h4
+                                class="text-2xl font-bold mb-1 tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                                Dhruv solanki</h4>
+                            <p class="text-primary label-text text-[10px] uppercase tracking-widest font-black mb-4">
+                                Full Stack Developer</p>
+                            <p class="text-secondary text-sm leading-relaxed font-serif italic m-0">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Values Section (Compact & Simplified) -->
+        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-20 md:mb-32">
+            <h2 class="text-3xl font-bold tracking-tight mb-8">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Mission Card -->
+                <div class="bg-white p-8 border border-primary/10 rounded-xl shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">target</span>
+                        <h3 class="text-xl font-bold">Mission</h3>
+                    </div>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">
+                        To <strong>DIGITALIZE</strong> the property buying ecosystem and operate on a
+                        <strong>Slim-Brokerage Model</strong>, directly reducing costs for our clients.
+                    </p>
+                    <p class="text-xs italic text-secondary/60 border-t border-primary/5 pt-4">
+                        "Bridging the trust gap through ethical, unbiased, and honest consultancy."
+                    </p>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="bg-white p-8 border border-primary/10 rounded-xl shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">visibility</span>
+                        <h3 class="text-xl font-bold">Vision</h3>
+                    </div>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">
+                        To be the most trusted global benchmark for real estate excellence, where technology and
+                        integrity create a seamless property ecosystem.
+                    </p>
+                    <p class="text-xs italic text-secondary/60 border-t border-primary/5 pt-4">
+                        "A lifelong commitment to clients through comprehensive post-sales support."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compact Brand DNA section -->
+        <section class="bg-primary text-on-primary py-16 md:py-20 mb-20 md:mb-32">
+            <div class="px-6 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="mb-12">
+                    <span class="label-text text-xs uppercase tracking-[0.3em] text-on-primary/60 mb-2 block">Our
+                        DNA</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">The Foundation</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                    <!-- DNA Pillar 1 -->
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-on-primary">01. Radical Transparency</h4>
+                        <p class="text-on-primary/70 text-sm leading-relaxed">
+                            Eliminating hidden agendas through unbiased data and ethical advisory.
+                        </p>
+                    </div>
+
+                    <!-- DNA Pillar 2 -->
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-on-primary">02. Tech-First Efficiency</h4>
+                        <p class="text-on-primary/70 text-sm leading-relaxed">
+                            Leveraging AI and digital platforms to pass operational savings to you.
+                        </p>
+                    </div>
+
+                    <!-- DNA Pillar 3 -->
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-on-primary">03. The 'After-Sale' Promise</h4>
+                        <p class="text-on-primary/70 text-sm leading-relaxed">
+                            A commitment that begins, not ends, with the closing of a deal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Section (Service Pillars) -->
         <section class="bg-on-surface text-surface py-20 md:py-32 mb-32 md:mb-48">
             <div
                 class="px-6 md:px-12 max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Our Core Pillars</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Our Core Services</h2>
                     <p class="text-lg md:text-xl leading-relaxed text-surface-variant/80 mb-12">
-                        We pride ourselves on a service model built on three core pillars that facilitate the Noida real estate ecosystem.
+                        We pride ourselves on a service model built on three core pillars that facilitate the Noida real
+                        estate ecosystem.
                     </p>
                     <div class="space-y-8">
                         <div class="flex gap-6 items-start">
                             <span class="text-primary-container text-2xl font-bold">01.</span>
                             <div>
                                 <h4 class="text-xl font-bold mb-2">Property Broking</h4>
-                                <p class="text-surface-variant/60 text-sm">Facilitating seamless transactions with a curated portfolio of the region’s most sought-after addresses.</p>
+                                <p class="text-surface-variant/60 text-sm">Facilitating seamless transactions with a
+                                    curated portfolio of the region’s most sought-after addresses.</p>
                             </div>
                         </div>
                         <div class="flex gap-6 items-start">
                             <span class="text-primary-container text-2xl font-bold">02.</span>
                             <div>
                                 <h4 class="text-xl font-bold mb-2">Investment Consultancy</h4>
-                                <p class="text-surface-variant/60 text-sm">Providing data-driven advice to maximize capital appreciation and secure sustainable rental yields.</p>
+                                <p class="text-surface-variant/60 text-sm">Providing data-driven advice to maximize
+                                    capital appreciation and secure sustainable rental yields.</p>
                             </div>
                         </div>
                         <div class="flex gap-6 items-start">
                             <span class="text-primary-container text-2xl font-bold">03.</span>
                             <div>
                                 <h4 class="text-xl font-bold mb-2">Portfolio Management</h4>
-                                <p class="text-surface-variant/60 text-sm">Offering end-to-end oversight of your real estate assets to ensure long-term growth and hassle-free ownership.</p>
+                                <p class="text-surface-variant/60 text-sm">Offering end-to-end oversight of your real
+                                    estate assets to ensure long-term growth and hassle-free ownership.</p>
                             </div>
                         </div>
                     </div>
@@ -246,37 +599,48 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32">
-            <div class="bg-surface-container-low p-12 md:p-24">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-24 md:mb-32">
+            <div class="bg-surface-container-low p-6 md:p-12 lg:p-24 rounded-3xl">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div>
-                        <span class="label-text text-sm uppercase tracking-[0.4em] text-primary mb-4 block">Excellence Guaranteed</span>
-                        <h2 class="text-4xl md:text-5xl font-headline font-bold mb-8">Why Choose Us?</h2>
-                        <p class="text-lg text-secondary leading-relaxed font-serif italic">
-                            "Vantage Realtors integrates comprehensive market analytics with a personalized touch. Specializing in Noida’s residential and commercial hubs, we simplify the complexities of property acquisition and management, delivering excellence at every stage of your investment journey."
+                        <span class="label-text text-xs uppercase tracking-[0.4em] text-primary mb-4 block">Excellence
+                            Guaranteed</span>
+                        <h2 class="text-3xl md:text-5xl font-headline font-bold mb-6">Why Choose Us?</h2>
+                        <p class="text-base md:text-lg text-secondary leading-relaxed font-serif italic mb-8 lg:mb-0">
+                            "Vantage Realtors integrates comprehensive market analytics with a personalized touch.
+                            Specializing in Noida’s residential and commercial hubs, we simplify the complexities of
+                            property acquisition and management, delivering excellence at every stage of your investment
+                            journey."
                         </p>
                     </div>
-                    <div class="grid grid-cols-2 gap-8">
-                        <div class="p-8 border border-primary/10 bg-white">
-                            <h4 class="text-3xl font-bold text-primary mb-2">Transparent</h4>
-                            <p class="text-secondary text-xs uppercase tracking-widest">Operation Mode</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+                        <div class="p-6 md:p-8 border border-primary/10 bg-white rounded-xl">
+                            <h4 class="text-2xl md:text-3xl font-bold text-primary mb-1">Transparent</h4>
+                            <p class="text-secondary text-[10px] uppercase tracking-widest font-medium">Operation Mode
+                            </p>
                         </div>
-                        <div class="p-8 border border-primary/10 bg-white">
-                            <h4 class="text-3xl font-bold text-primary mb-2">Professional</h4>
-                            <p class="text-secondary text-xs uppercase tracking-widest">Advisory Standard</p>
+                        <div class="p-6 md:p-8 border border-primary/10 bg-white rounded-xl">
+                            <h4 class="text-2xl md:text-3xl font-bold text-primary mb-1">Professional</h4>
+                            <p class="text-secondary text-[10px] uppercase tracking-widest font-medium">Consultancy
+                                Standard</p>
                         </div>
-                        <div class="p-8 border border-primary/10 bg-white shadow-xl translate-y-4">
-                            <h4 class="text-3xl font-bold text-primary mb-2">Results</h4>
-                            <p class="text-secondary text-xs uppercase tracking-widest">Oriented Approach</p>
+                        <div
+                            class="p-6 md:p-8 border border-primary/10 bg-white rounded-xl lg:translate-y-4 lg:shadow-xl">
+                            <h4 class="text-2xl md:text-3xl font-bold text-primary mb-1">Results</h4>
+                            <p class="text-secondary text-[10px] uppercase tracking-widest font-medium">Oriented
+                                Approach</p>
                         </div>
-                        <div class="p-8 border border-primary/10 bg-white shadow-xl translate-y-4">
-                            <h4 class="text-3xl font-bold text-primary mb-2">Noida</h4>
-                            <p class="text-secondary text-xs uppercase tracking-widest">Hub Specialist</p>
+                        <div
+                            class="p-6 md:p-8 border border-primary/10 bg-white rounded-xl lg:translate-y-4 lg:shadow-xl">
+                            <h4 class="text-2xl md:text-3xl font-bold text-primary mb-1">Noida</h4>
+                            <p class="text-secondary text-[10px] uppercase tracking-widest font-medium">Hub Specialist
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Leadership Section: The Institutional Minds -->
     </main>
 
     <!-- Footer -->
@@ -286,7 +650,7 @@
                 <!-- Col 1: Brand -->
                 <div class="space-y-8">
                     <a href="home.html" class="inline-block">
-                        <img src="Untitled design (14).png" alt="Vantage Logo"
+                        <img src="Untitled design (14).png" alt="DigitalBroker Logo"
                             class="h-16 w-auto object-contain brightness-0 invert" />
                     </a>
                     <p class="text-[#5f5e5e] text-sm leading-relaxed max-w-xs font-serif italic">
@@ -341,10 +705,6 @@
                             class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="#"
-                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
                         <a href="https://wa.me/917982614992"
                             class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#d3ad70] hover:bg-[#d3ad70] hover:text-black transition-all">
                             <i class="fa-brands fa-whatsapp"></i>
@@ -370,6 +730,106 @@
                     } else {
                         icon.textContent = 'close';
                         document.body.style.overflow = 'hidden';
+                    }
+                });
+            }
+
+            // Smooth scroll for anchor links and close mobile menu
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        e.preventDefault();
+
+                        // Close mobile menu if open
+                        if (menu && !menu.classList.contains('hidden')) {
+                            menu.classList.add('hidden');
+                            menu.classList.remove('flex');
+                            if (icon) icon.textContent = 'menu';
+                            document.body.style.overflow = 'auto';
+                        }
+
+                        // Smooth scroll
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Reveal on Scroll Observer
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-image').forEach(el => {
+                revealObserver.observe(el);
+            });
+            // Leadership Accordion Logic
+            const leadershipBar = document.getElementById('leadership-bar');
+            const leadershipContent = document.getElementById('leadership-content');
+            const leadershipArrow = document.getElementById('leadership-arrow');
+
+            if (leadershipBar && leadershipContent && leadershipArrow) {
+                leadershipBar.addEventListener('click', () => {
+                    const isExpanded = leadershipContent.classList.contains('max-h-[5000px]');
+
+                    if (!isExpanded) {
+                        // Expand
+                        leadershipContent.classList.remove('max-h-0', 'opacity-0');
+                        leadershipContent.classList.add('max-h-[5000px]', 'opacity-100');
+                        leadershipArrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        // Collapse
+                        leadershipContent.classList.add('max-h-0', 'opacity-0');
+                        leadershipContent.classList.remove('max-h-[5000px]', 'opacity-100');
+                        leadershipArrow.style.transform = 'rotate(0deg)';
+
+                        // Scroll slightly up so the bar stays in view
+                        setTimeout(() => {
+                            document.getElementById('leadership').scrollIntoView({ behavior: 'smooth' });
+                        }, 400);
+                    }
+                });
+            }
+
+            // Team Accordion Logic
+            const teamBar = document.getElementById('team-bar');
+            const teamContent = document.getElementById('team-content');
+            const teamArrow = document.getElementById('team-arrow');
+
+            if (teamBar && teamContent && teamArrow) {
+                teamBar.addEventListener('click', () => {
+                    const isExpanded = teamContent.classList.contains('max-h-[5000px]');
+
+                    if (!isExpanded) {
+                        // Expand
+                        teamContent.classList.remove('max-h-0', 'opacity-0');
+                        teamContent.classList.add('max-h-[5000px]', 'opacity-100');
+                        teamArrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        // Collapse
+                        teamContent.classList.add('max-h-0', 'opacity-0');
+                        teamContent.classList.remove('max-h-[5000px]', 'opacity-100');
+                        teamArrow.style.transform = 'rotate(0deg)';
+
+                        // Scroll slightly up so the bar stays in view
+                        setTimeout(() => {
+                            document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
+                        }, 400);
                     }
                 });
             }
