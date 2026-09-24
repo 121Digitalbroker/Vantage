@@ -1,13 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light overflow-x-hidden w-full max-w-[100vw]" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=Newtown/KSC-NEW-TOWN.pdf">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V43WGEX72G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-V43WGEX72G');
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="Logo_Vantage.png" />
     <title>KSC New Town | Vantage Realtors</title>
-    <script>window.location.replace('Newtown/KSC-NEW-TOWN.pdf');</script>
+    <meta name="description" content="KSC New Town brochure — Vantage Realtors, Noida.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .label-font {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pdf-shell {
+            height: calc(100vh - 3.5rem);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            flex: 1;
+            min-height: 0;
+            border: 0;
+            display: block;
+            background: #e4e2dd;
+        }
+
+        .glass-panel {
+            background: rgba(251, 249, 244, 0.55);
+            backdrop-filter: blur(22px) saturate(160%);
+            -webkit-backdrop-filter: blur(22px) saturate(160%);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: 0 20px 50px rgba(27, 28, 25, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+        }
+
+        .chat-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.35);
+            border: 1px solid rgba(116, 91, 0, 0.18);
+            border-radius: 10px;
+            padding: 0.75rem 0.9rem;
+            color: #1b1c19;
+            font-family: 'Noto Serif', serif;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.25s ease, background 0.25s ease;
+        }
+
+        .chat-input:focus {
+            border-color: #745b00;
+            background: rgba(255, 255, 255, 0.55);
+        }
+
+        .chat-input::placeholder {
+            color: rgba(27, 28, 25, 0.35);
+        }
+
+        #quick-chat-panel {
+            opacity: 0;
+            transform: translateY(16px) scale(0.96);
+            pointer-events: none;
+            transition: opacity 0.28s ease, transform 0.28s ease;
+        }
+
+        #quick-chat-panel.open {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f5f3ee",
+                        "on-primary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container": "#f0eee9",
+                        "primary": "#745b00",
+                        "surface": "#fbf9f4",
+                        "on-surface": "#1b1c19"
+                    },
+                    fontFamily: {
+                        headline: ["Noto Serif"],
+                        body: ["Noto Serif"],
+                        label: ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <p><a href="Newtown/KSC-NEW-TOWN.pdf">Open KSC New Town PDF</a></p>
+
+<body class="bg-surface text-on-surface">
+    <div class="w-full overflow-x-hidden flex flex-col min-h-screen">
+        <nav
+            class="fixed top-0 w-full z-50 h-14 bg-[#fbf9f4]/90 backdrop-blur-xl transition-colors duration-500 shadow-[0_20px_30px_rgba(116,91,0,0.04)]">
+            <div class="flex justify-between items-center px-5 md:px-10 h-full w-full max-w-screen-2xl mx-auto">
+                <a href="home.html" class="flex items-center group no-underline">
+                    <img src="Logo_Vantage.png" alt="Vantage Logo" class="h-9 w-auto object-contain" />
+                </a>
+
+                <div class="hidden md:flex items-center gap-7 font-serif text-base tracking-tight">
+                    <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                        href="home.html">Home</a>
+
+                    <div class="relative group">
+                        <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300 flex items-center gap-1 cursor-pointer"
+                            href="about.html">
+                            About Us
+                            <span class="material-symbols-outlined text-[13px]">expand_more</span>
+                        </a>
+                        <div
+                            class="absolute left-0 pt-3 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                            <div
+                                class="bg-white/95 backdrop-blur-xl border border-primary/10 shadow-xl p-2 rounded-xl flex flex-col gap-1 text-left">
+                                <a href="about.html"
+                                    class="px-3 py-1.5 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-sm font-medium">About
+                                    Us</a>
+                                <a href="about.html#leadership"
+                                    class="px-3 py-1.5 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-sm font-medium">Leader</a>
+                                <a href="about.html#team"
+                                    class="px-3 py-1.5 hover:bg-surface-container rounded-lg text-[#5f5e5e] hover:text-[#1b1c19] transition-colors text-sm font-medium">Team</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                        href="services.html">Services</a>
+                    <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                        href="careers.html">Careers</a>
+                    <a class="text-[#1b1c19] transition-opacity duration-300" href="Newtown.html">Newtown</a>
+                    <a class="text-[#5f5e5e] hover:text-[#1b1c19] transition-opacity duration-300"
+                        href="contact.html">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-3 md:gap-4">
+                    <a href="contact.html">
+                        <button
+                            class="bg-primary text-on-primary px-5 py-1.5 font-serif text-sm tracking-wide hover:opacity-80 transition-opacity duration-300 active:scale-95">
+                            Inquiry
+                        </button>
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-on-surface z-50 relative" type="button">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden fixed inset-0 bg-[#fbf9f4] z-40 pt-16 px-6 md:hidden flex-col gap-6 font-serif text-2xl h-screen w-full overflow-y-auto pb-10">
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="home.html">Home</a>
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="about.html">About Us</a>
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4 pl-4 text-xl"
+                href="about.html#leadership">Leader</a>
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4 pl-4 text-xl"
+                href="about.html#team">Team</a>
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4"
+                href="services.html">Services</a>
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="careers.html">Careers</a>
+            <a class="text-[#1b1c19] border-b border-black/10 pb-4" href="Newtown.html">Newtown</a>
+            <a class="text-[#5f5e5e] hover:text-[#1b1c19] border-b border-black/10 pb-4" href="contact.html">Contact</a>
+        </div>
+
+        <main class="pt-14">
+            <div class="pdf-shell">
+                <div
+                    class="flex items-center justify-between gap-3 px-4 md:px-6 py-1.5 border-b border-black/5 bg-surface-container-low shrink-0">
+                    <p class="label-font text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-secondary m-0">
+                        KSC New Town Brochure
+                    </p>
+                    <a href="Newtown/KSC-NEW-TOWN.pdf" target="_blank" rel="noopener"
+                        class="label-font text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-primary hover:opacity-70 no-underline">
+                        Open PDF
+                    </a>
+                </div>
+                <iframe class="pdf-frame" src="Newtown/KSC-NEW-TOWN.pdf" title="KSC New Town PDF"></iframe>
+            </div>
+        </main>
+    </div>
+
+    <!-- Quick Chat (Newtown Inquiry) -->
+    <div class="fixed bottom-5 right-5 z-[60] flex flex-col items-end gap-3">
+        <div id="quick-chat-panel" class="glass-panel w-[min(92vw,380px)] rounded-2xl overflow-hidden">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-white/40">
+                <div>
+                    <p class="label-font text-[10px] uppercase tracking-[0.25em] text-primary font-bold m-0">
+                        Newtown Inquiry
+                    </p>
+                    <p class="font-serif text-base text-on-surface m-0 mt-1">Quick Chat</p>
+                </div>
+                <button id="quick-chat-close" type="button"
+                    class="w-9 h-9 rounded-full bg-white/40 hover:bg-white/70 transition-colors flex items-center justify-center"
+                    aria-label="Close chat">
+                    <span class="material-symbols-outlined text-[20px]">close</span>
+                </button>
+            </div>
+
+            <form class="px-5 py-5 space-y-4" name="newtown" method="POST"
+                action="/Newtown.html?success=true" data-netlify="true" data-netlify-honeypot="bot-field"
+                id="newtown-chat-form">
+                <input type="hidden" name="form-name" value="newtown" />
+                <input type="hidden" name="pillar" value="KSC New Town" />
+                <input type="hidden" name="project" value="Newtown" />
+                <div class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </div>
+
+                <div id="chat-success" class="hidden p-3 rounded-xl bg-green-50/80 border border-green-200 text-green-800 text-sm font-serif italic">
+                    Thanks — your Newtown inquiry was received. We'll connect with you shortly.
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="label-font text-[10px] uppercase tracking-widest text-primary font-bold">Client
+                        Name</label>
+                    <input class="chat-input" type="text" name="name" placeholder="Your name" required />
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="label-font text-[10px] uppercase tracking-widest text-primary font-bold">Primary
+                        Email</label>
+                    <input class="chat-input" type="email" name="email" placeholder="you@email.com" required />
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="label-font text-[10px] uppercase tracking-widest text-primary font-bold">Phone</label>
+                    <input class="chat-input" type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="label-font text-[10px] uppercase tracking-widest text-primary font-bold">Engagement
+                        Detail</label>
+                    <textarea class="chat-input" name="message" rows="3"
+                        placeholder="Tell us how we can help with Newtown..." required></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-primary text-on-primary py-3.5 label-font text-[11px] uppercase tracking-[0.3em] font-black hover:bg-black transition-all rounded-xl">
+                    Connect With Us
+                </button>
+            </form>
+        </div>
+
+        <button id="quick-chat-btn" type="button"
+            class="glass-panel h-14 px-5 rounded-full flex items-center gap-2.5 text-on-surface hover:scale-[1.03] active:scale-95 transition-transform"
+            aria-expanded="false" aria-controls="quick-chat-panel">
+            <span class="material-symbols-outlined text-primary text-[22px]">chat</span>
+            <span class="label-font text-[11px] uppercase tracking-[0.22em] font-bold">Quick Chat</span>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn && btn.querySelector('.material-symbols-outlined');
+
+            if (btn && menu && icon) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('flex');
+                    if (menu.classList.contains('hidden')) {
+                        icon.textContent = 'menu';
+                        document.body.style.overflow = 'auto';
+                    } else {
+                        icon.textContent = 'close';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            }
+
+            const chatBtn = document.getElementById('quick-chat-btn');
+            const chatPanel = document.getElementById('quick-chat-panel');
+            const chatClose = document.getElementById('quick-chat-close');
+            const chatForm = document.getElementById('newtown-chat-form');
+            const chatSuccess = document.getElementById('chat-success');
+
+            function openChat() {
+                chatPanel.classList.add('open');
+                chatBtn.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeChat() {
+                chatPanel.classList.remove('open');
+                chatBtn.setAttribute('aria-expanded', 'false');
+            }
+
+            if (chatBtn && chatPanel) {
+                chatBtn.addEventListener('click', () => {
+                    if (chatPanel.classList.contains('open')) closeChat();
+                    else openChat();
+                });
+            }
+            if (chatClose) chatClose.addEventListener('click', closeChat);
+
+            if (window.location.search.includes('success=true')) {
+                openChat();
+                if (chatSuccess) chatSuccess.classList.remove('hidden');
+            }
+
+            if (chatForm) {
+                chatForm.addEventListener('submit', async (e) => {
+                    // Prefer AJAX so the PDF page stays open; fall back to normal POST.
+                    if (!chatForm.hasAttribute('data-netlify')) return;
+                    e.preventDefault();
+                    const data = new FormData(chatForm);
+                    try {
+                        await fetch('/', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: new URLSearchParams(data).toString()
+                        });
+                        chatForm.reset();
+                        if (chatSuccess) chatSuccess.classList.remove('hidden');
+                    } catch (err) {
+                        chatForm.submit();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>
